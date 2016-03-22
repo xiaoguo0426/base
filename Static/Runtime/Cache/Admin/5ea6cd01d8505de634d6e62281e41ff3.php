@@ -111,70 +111,55 @@
 						<div class="col-lg-12">
 							<div class="ibox float-e-margins">
 								<div class="ibox-title">
-									<h5><?php echo ($title); ?></h5>
+									<h4 class='pull-left'><?php echo ($title); ?></h4>
+									<div class="ibox-tools">
+										
+	<button type="button" class="btn btn-sm btn-primary">添加菜单</button>
+
+									</div>
 								</div>
 								<div class="ibox-content">
 									
 										<div class="table-responsive">
 											<div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline">
 												
-	<div id="DataTables_Table_0_filter" class="dataTables_filter">
-		<label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="DataTables_Table_0"></label>
-		<label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="DataTables_Table_0"></label>
-		<label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="DataTables_Table_0"></label>
-		<label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="DataTables_Table_0"></label>
-	</div>
-
 												<table class="table table-striped table-bordered table-hover dataTables-example dataTable dtr-inline" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
 													
 	<thead>
-		<tr role="row">
-			<th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 189px;">Rendering engine</th>
-			<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 261px;">Browser</th>
-			<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 237px;">Platform(s)</th>
-			<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 165px;">Engine version</th>
-			<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 124px;">CSS grade</th></tr>
+		<tr>
+			<th>#</th>
+			<th>菜单名</th>
+			<th>图标</th>
+			<th>链接</th>
+			<th>状态</th>
+			<th>操作</th>
+		</tr>
 	</thead>
 	<tbody>
-		<tr class="gradeA odd" role="row">
-			<td class="sorting_1">Gecko</td>
-			<td>Firefox 1.0</td>
-			<td>Win 98+ / OSX.2+</td>
-			<td class="center">1.7</td>
-			<td class="center">A</td>
-		</tr>
-		<tr class="gradeA even" role="row">
-			<td class="sorting_1">Gecko</td>
-			<td>Netscape Browser 8</td>
-			<td>Win 98SE+</td>
-			<td class="center">1.7</td>
-			<td class="center">A</td>
+		<tr>
+			<td>1</td>
+			<td>Project <small>This is example of project</small></td>
+			<td>Patrick Smith</td>
+			<td>0800 051213</td>
+			<td>Inceptos Hymenaeos Ltd</td>
+			<td><span class="pie">0.52/1.561</span></td>
 		</tr>
 	</tbody>
-	<tfoot>
-		<tr>
-			<th rowspan="1" colspan="1">Rendering engine</th>
-			<th rowspan="1" colspan="1">Browser</th>
-			<th rowspan="1" colspan="1">Platform(s)</th>
-			<th rowspan="1" colspan="1">Engine version</th>
-			<th rowspan="1" colspan="1">CSS grade</th>
-		</tr>
-	</tfoot>
 
 												</table>
-												<div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
-												<div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
-													<ul class="pagination">
-														<li class="paginate_button previous disabled" aria-controls="DataTables_Table_0" tabindex="0" id="DataTables_Table_0_previous"><a href="#">Previous</a></li>
-														<li class="paginate_button active" aria-controls="DataTables_Table_0" tabindex="0"><a href="#">1</a></li>
-														<li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">2</a></li>
-														<li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">3</a></li>
-														<li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">4</a></li>
-														<li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">5</a></li>
-														<li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">6</a></li>
-														<li class="paginate_button next" aria-controls="DataTables_Table_0" tabindex="0" id="DataTables_Table_0_next"><a href="#">Next</a></li>
-													</ul>
-												</div>
+												<!--												<div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
+																								<div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+																									<ul class="pagination">
+																										<li class="paginate_button previous disabled" aria-controls="DataTables_Table_0" tabindex="0" id="DataTables_Table_0_previous"><a href="#">Previous</a></li>
+																										<li class="paginate_button active" aria-controls="DataTables_Table_0" tabindex="0"><a href="#">1</a></li>
+																										<li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">2</a></li>
+																										<li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">3</a></li>
+																										<li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">4</a></li>
+																										<li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">5</a></li>
+																										<li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">6</a></li>
+																										<li class="paginate_button next" aria-controls="DataTables_Table_0" tabindex="0" id="DataTables_Table_0_next"><a href="#">Next</a></li>
+																									</ul>
+																								</div>-->
 											</div>
 										</div>
 									
@@ -189,7 +174,7 @@
 	<script>
 		window._APP_ = '/base/index.php';
 		window._RES_ = 'http://localhost/base/Static/Resource';
-		window._SELF_ = '/base/index.php/Admin/Index/index.shtml';
+		window._SELF_ = '/base/index.php/Admin/Menu/index.shtml';
 	</script>
 
 	<!-- Mainly scripts -->
@@ -208,47 +193,5 @@
 
 
 	
-	<!-- Data Tables -->
-	<link href="http://localhost/base/Static/Resource/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
-	<link href="http://localhost/base/Static/Resource/css/plugins/dataTables/dataTables.responsive.css" rel="stylesheet">
-	<link href="http://localhost/base/Static/Resource/css/plugins/dataTables/dataTables.tableTools.min.css" rel="stylesheet">
-	<style>
-		body.DTTT_Print {
-			background: #fff;
-
-		}
-		.DTTT_Print #page-wrapper {
-			margin: 0;
-			background:#fff;
-		}
-
-		button.DTTT_button, div.DTTT_button, a.DTTT_button {
-			border: 1px solid #e7eaec;
-			background: #fff;
-			color: #676a6c;
-			box-shadow: none;
-			padding: 6px 8px;
-		}
-		button.DTTT_button:hover, div.DTTT_button:hover, a.DTTT_button:hover {
-			border: 1px solid #d2d2d2;
-			background: #fff;
-			color: #676a6c;
-			box-shadow: none;
-			padding: 6px 8px;
-		}
-
-		.dataTables_filter label {
-			margin-right: 5px;
-
-		}
-	</style>
-
 	
-	<!-- Data Tables -->
-	<script src="http://localhost/base/Static/Resource/js/plugins/dataTables/jquery.dataTables.js"></script>
-	<script src="http://localhost/base/Static/Resource/js/plugins/dataTables/dataTables.bootstrap.js"></script>
-	<script src="http://localhost/base/Static/Resource/js/plugins/dataTables/dataTables.responsive.js"></script>
-	<script src="http://localhost/base/Static/Resource/js/plugins/dataTables/dataTables.tableTools.min.js"></script>
-
-
 </html>

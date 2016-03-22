@@ -65,4 +65,19 @@
 	<script src="http://localhost/base/Static/Resource/js/inspinia.js"></script>
 	<script src="http://localhost/base/Static/Resource/js/plugins/pace/pace.min.js"></script>
 
+
+	
+	
+	<script src="http://localhost/base/Static/Resource/plugins/layer/layer.js"></script>
+	<script>
+		$(function () {
+//			$("form#login").submit(function () {
+//				$(this).data('ajax');
+//				layer.msg($(this).data('tips') || '加载中', {icon: 16,time:8000});
+//
+//			});
+		});
+
+	</script>
+
 </html>
