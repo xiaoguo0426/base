@@ -20,7 +20,10 @@ class MenuController extends Controller {
 	}
 
 	public function form() {
-		$this->display();
+
+		$this->assign('title', '菜单添加');
+		//获得模板内容，异步返回
+		$this->ajaxReturn($this->fetch());
 	}
 
 }

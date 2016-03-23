@@ -38,18 +38,26 @@
 				layer.close(index);
 			},
 			success: function (res) {
-				if (res.status === 1) {
-					layer.msg(res.info || '操作成功！', {icon: 1});
-					window.setTimeout(function () {
-						if (res.url) {
-							window.location.href = res.url;
-						} else {
-							window.location.reload();
-						}
-					}, 3000);
+				console.log(typeof res);
+				if (typeof res === 'object') {
+					if (res.status === 1) {
+						layer.msg(res.info || '操作成功！', {icon: 1});
+						window.setTimeout(function () {
+							if (res.url) {
+								window.location.href = res.url;
+							} else {
+								window.location.reload();
+							}
+						}, 3000);
 
-				} else {
-					layer.msg(res.info || '操作失败！', {icon: 2});
+					} else {
+						layer.msg(res.info || '操作失败！', {icon: 2});
+					}
+				}else{
+//					jQuery(res).replaceAll('div.ibox-content');
+					
+					console.log(res);
+					$("div.ibox-content").replaceWith(res);
 				}
 			},
 			error: function () {
@@ -83,7 +91,10 @@ $(function () {
 				});
 			})
 			.on('click', '[data-logout]', function () {
-				confirm('确定要退出系统？') && $.form.load(_APP_ + "/Admin/Index/logout",{},'post');
-			});
+				confirm('确定要退出系统？') && $.form.load(_APP_ + "/Admin/Index/logout", {}, 'post');
+			}).on('click', '[data-modal]', function () {
+//				alert($(this).data('modal'));
+		$.form.load($(this).data('modal'));
+	});
 });
 
