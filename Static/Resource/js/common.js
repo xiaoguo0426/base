@@ -14,8 +14,9 @@
 	 */
 	_app.prototype.init = function () {
 		$.getScript(_RES_ + "/plugins/layer/layer.js");
-		$.getScript(_RES_ + "/plugins/validate/jquery.validate.min.js");
+		$.getScript(_RES_ + "/plugins/validate/jquery.validate.js");
 		$.getScript(_RES_ + "/plugins/validate/dist/messages_zh.min.js");
+		$.getScript(_RES_ + "/plugins/validate/validate.extend.js");
 	};
 
 	function _form() {
@@ -53,9 +54,9 @@
 					} else {
 						layer.msg(res.info || '操作失败！', {icon: 2});
 					}
-				}else{
+				} else {
 //					jQuery(res).replaceAll('div.ibox-content');
-					
+
 					console.log(res);
 					$("div.ibox-content").replaceWith(res);
 				}
@@ -93,8 +94,7 @@ $(function () {
 			.on('click', '[data-logout]', function () {
 				confirm('确定要退出系统？') && $.form.load(_APP_ + "/Admin/Index/logout", {}, 'post');
 			}).on('click', '[data-modal]', function () {
-//				alert($(this).data('modal'));
-		$.form.load($(this).data('modal'));
-	});
+				$.form.load($(this).data('modal'));
+			});
 });
 

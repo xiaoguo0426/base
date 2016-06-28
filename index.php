@@ -20,6 +20,9 @@ define('COMMON_PATH', APP_ROOT.'Library/');
 //定义运行目录
 define('RUNTIME_PATH', APP_ROOT.'Static/Runtime/');
 
+//第三方类库目录
+define('VENDOR_PATH', COMMON_PATH.'Vendor/');
+
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';

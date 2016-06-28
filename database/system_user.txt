@@ -1,0 +1,9 @@
+字段名			字段类型		长度			注释
+id				int				11 				用户Id		
+name			varchar			20				用户名
+password		varchar			20				用户密码
+role_id			varchar			2				角色id
+status			tinyint			1				状态
+
+create_date		datetime						创建时间
+update_date		datetime						更新时间
