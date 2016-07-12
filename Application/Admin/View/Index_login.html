@@ -14,6 +14,7 @@
                 <div class="form-group">
                     <input type="password" class="form-control" name='password' placeholder="Password" maxlength="20" pattern="/^\w+$/" required="">
                 </div>
+                <input name="form_token" type="hidden" value="{$form_token}" />
                 <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
                 <!--<a href="#"><small>Forgot password?</small></a>-->
             </form>
@@ -23,7 +24,5 @@
     </body>
 </block>
 <block name="script">
-    <script src="__RES__/plugins/layer/layer.js"></script>
-    <script>
-    </script>
+    <!--<script src="__RES__/plugins/layer/layer.js"></script>-->
 </block>

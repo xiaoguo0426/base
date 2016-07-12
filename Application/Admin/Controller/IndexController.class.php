@@ -5,12 +5,14 @@ namespace Admin\Controller;
 use Think\Controller;
 use Admin\Service\IndexService;
 
-class IndexController extends Controller {
+class IndexController extends Controller
+{
 
     /**
      * 后台首页
      */
-    public function index() {
+    public function index()
+    {
         if (is_login()) {
             $this->display();
         } else {
@@ -21,7 +23,8 @@ class IndexController extends Controller {
     /**
      * 登录页
      */
-    public function login() {
+    public function login()
+    {
         if (IS_POST) {
             $user = D("Index");
             if (!$user->create()) {
@@ -29,6 +32,14 @@ class IndexController extends Controller {
             } else {
                 $name = I('post.name');
                 $password = I('post.password', '0', 'md5');
+                $form_token = I('post.form_token', '');
+
+                if (!validate_form_token($form_token)) {
+                    $this->error('非法提交！');
+                }else{
+                    //token验证通过后注销token
+                    form_token(false);
+                }
 
                 $service = new IndexService();
                 $result = $service->validate_system_user($name, $password);
@@ -59,6 +70,7 @@ class IndexController extends Controller {
             if (is_login()) {
                 $this->redirect('index');
             } else {
+                $this->assign('form_token', form_token(true, C('FORM_TYPE.REGISTER')));
                 $this->display();
             }
         }
@@ -68,7 +80,8 @@ class IndexController extends Controller {
       注销登陆
      */
 
-    public function logout() {
+    public function logout()
+    {
         if (IS_AJAX) {
             session('user', NULL);
             $this->success('退出成功！正在跳转...', U('Admin/Index/login'), 1);

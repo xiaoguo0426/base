@@ -31,6 +31,7 @@
                 <div class="form-group">
                     <input type="password" class="form-control" name='password' placeholder="Password" maxlength="20" pattern="/^\w+$/" required="">
                 </div>
+                <input name="form_token" type="hidden" value="<?php echo ($form_token); ?>" />
                 <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
                 <!--<a href="#"><small>Forgot password?</small></a>-->
             </form>
@@ -62,8 +63,6 @@
 
     
     
-    <script src="http://localhost/base/Static/Resource/plugins/layer/layer.js"></script>
-    <script>
-    </script>
+    <!--<script src="http://localhost/base/Static/Resource/plugins/layer/layer.js"></script>-->
 
 </html>

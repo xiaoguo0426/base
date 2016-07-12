@@ -14,17 +14,21 @@ use Vendor\upload\Qiniu;
  */
 class UploaderController extends Controller {
 
+	private $qiniu = "";
+
 	public function __construct() {
 		parent::__construct();
 		//import('upload.Qiniu','','.php');
-		$qiniu = new Qiniu();
+		$this->qiniu = new Qiniu();
 	}
 
 	/**
 	 * 
 	 */
 	public function form() {
-		$this->ajaxReturn($this->fetch());
+//		$this->ajaxReturn($this->fetch());
+
+		$this->display();
 	}
 
 	/**
@@ -37,7 +41,7 @@ class UploaderController extends Controller {
 		} else {
 			//require 'Qiniu.php';
 			//do upload 
-			$result = $qiniu->uploadFile($_FILES['file']['tmp_name']);
+			$result = $this->qiniu->uploadFile($_FILES['file']['tmp_name']);
 
 			echo json_encode($result);
 			//print_r($result);
