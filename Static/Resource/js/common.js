@@ -27,21 +27,29 @@
     /**
      * 异步加载数据
      * @returns {undefined}
+     * update 2016-03-27  方法参数对象化
+     * url  url地址
+     * data  参数
+     * method  请求类型
+     * tips  提示
+     * selector  选择器
+     * async   是否异步请求
      */
-    _form.prototype.load = function (url, data, type, tips) {
+    _form.prototype.load = function (param) {
         var index = layer.load({icon: 16});
         $.ajax({
-            type: type || 'GET',
-            url: url || _SELF_,
-            data: data || {},
-            dataType: 'json',
+            type: param.method || 'GET',
+            url: param.url || _SELF_,
+            data: param.data || {},
+            // dataType: 'json',
+            async: typeof param.async === 'undefined' ? true : false,
             beforeSend: function () {
             },
             complete: function (XMLHttpRequest, textStatus) {
                 layer.close(index);
             },
-            success: function (res) {
-                return false;
+            success: function (res,textStatus) {
+
                 if (typeof res === 'object') {
                     if (res.status === 1) {
                         layer.msg(res.info || '操作成功！', {icon: 1});
@@ -55,14 +63,18 @@
 
                     } else {
                         layer.msg(res.info || '操作失败！', {icon: 2});
+                        layer.close();
                     }
                 }
 
-                console.log(res);
                 jQuery(res).appendTo('body');
-            },
-            error: function () {
 
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log('error');
+                console.log(XMLHttpRequest);
+                console.log(textStatus);
+                console.log(errorThrown);
             }
         });
     };
@@ -81,20 +93,32 @@
 
 
 $(function () {
+    var param = {};
+    window._modal = "";
     $("body > *")
         .on('click', '[data-ajax]', function () {
             var $_form = $(this);
             $_form.validate({
                 //验证通过后回掉函数
                 submitHandler: function () {
-                    $.form.load($_form.attr('action'), $_form.serializeArray(), $_form.attr('method'), $_form.data('tips'));
+                    param.url = $_form.attr('action');
+                    param.data = $_form.serializeArray();
+                    param.method = $_form.attr('method');
+                    param.tips = $_form.data('tips');
+                    $.form.load(param);
                 }
             });
-        })
-        .on('click', '[data-logout]', function () {
-            confirm('确定要退出系统？') && $.form.load(_APP_ + "/Admin/Index/logout", {}, 'post');
+        }).on('click', '[data-logout]', function () {
+            //退出登陆
+            param.url = _APP_+"/Admin/Index/logout";
+            param.method = "POST";
+
+            confirm('确定要退出系统？') && $.form.load(param);
         }).on('click', '[data-modal]', function () {
-        $.form.load($(this).data('modal'));
-    });
+            var $_form = $(this);
+            //同步加载模态框
+            param.url = $_form.data('modal');
+            $.form.load(param);
+        });
 });
 

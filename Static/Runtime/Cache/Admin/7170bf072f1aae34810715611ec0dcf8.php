@@ -7,6 +7,7 @@
         <meta name="author" content="gyt7574449@gmail.com">
         <meta http-equiv="Content-Language" content="zh-cn"/> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="http://localhost/base/Static/Resource/img/ico16x16.ico" />
         <title></title>
 
         <link href="http://localhost/base/Static/Resource/css/bootstrap.min.css" rel="stylesheet">
@@ -14,13 +15,14 @@
 
         <link href="http://localhost/base/Static/Resource/css/animate.css" rel="stylesheet">
         <link href="http://localhost/base/Static/Resource/css/style.css" rel="stylesheet">
+        <link href="http://localhost/base/Static/Resource/plugins/layer/skin/layer.css" rel="stylesheet">
 
     </head>
     
         <body>
-            <!---->
             <div id="wrapper">
-                <nav class="navbar-default navbar-static-side" role="navigation">
+                
+<nav class="navbar-default navbar-static-side" role="navigation">
 	<div class="sidebar-collapse">
 		<ul class="nav metismenu" id="side-menu">
 			<li class="nav-header">
@@ -178,7 +180,7 @@
 
     <!-- Mainly scripts -->
     <script src="http://localhost/base/Static/Resource/js/jquery-2.1.1.js"></script>
-    <script src="http://localhost/base/Static/Resource/js/common.js"></script>
+
     <script src="http://localhost/base/Static/Resource/js/bootstrap.min.js"></script>
     <script src="http://localhost/base/Static/Resource/js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="http://localhost/base/Static/Resource/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
@@ -188,9 +190,9 @@
 
     <!-- Custom and plugin javascript -->
     <script src="http://localhost/base/Static/Resource/js/inspinia.js"></script>
-    <script src="http://localhost/base/Static/Resource/js/plugins/pace/pace.min.js"></script>
+    <!--<script src="http://localhost/base/Static/Resource/js/plugins/pace/pace.min.js"></script>-->
 
-
+    <script src="http://localhost/base/Static/Resource/js/common.js"></script>
     
     
 </html>
