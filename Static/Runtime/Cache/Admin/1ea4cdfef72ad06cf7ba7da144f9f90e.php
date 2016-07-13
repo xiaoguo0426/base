@@ -21,7 +21,8 @@
     
         <body>
             <div id="wrapper">
-                <nav class="navbar-default navbar-static-side" role="navigation">
+                
+<nav class="navbar-default navbar-static-side" role="navigation">
 	<div class="sidebar-collapse">
 		<ul class="nav metismenu" id="side-menu">
 			<li class="nav-header">
@@ -207,7 +208,7 @@
 
     <!-- Custom and plugin javascript -->
     <script src="http://localhost/base/Static/Resource/js/inspinia.js"></script>
-    <!--<script src="http://localhost/base/Static/Resource/js/plugins/pace/pace.min.js"></script>-->
+    <script src="http://localhost/base/Static/Resource/js/plugins/pace/pace.min.js"></script>
 
     <script src="http://localhost/base/Static/Resource/js/common.js"></script>
     

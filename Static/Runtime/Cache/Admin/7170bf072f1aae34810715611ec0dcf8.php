@@ -190,7 +190,7 @@
 
     <!-- Custom and plugin javascript -->
     <script src="http://localhost/base/Static/Resource/js/inspinia.js"></script>
-    <!--<script src="http://localhost/base/Static/Resource/js/plugins/pace/pace.min.js"></script>-->
+    <script src="http://localhost/base/Static/Resource/js/plugins/pace/pace.min.js"></script>
 
     <script src="http://localhost/base/Static/Resource/js/common.js"></script>
     

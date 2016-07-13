@@ -66,9 +66,15 @@
                         layer.close();
                     }
                 }
-
-                jQuery(res).appendTo('body');
-
+                // var _modal = $(res);
+                // _modal.appendTo('body');
+                // // $('body').append(res);
+                // $('.modal').modal('show').on('hidden.bs.modal',function(){
+                //     _modal.remove();
+                // });
+                $(res).appendTo('body').modal('show').on('hidden.bs.modal',function () {
+                    $(this).remove();
+                });
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log('error');
