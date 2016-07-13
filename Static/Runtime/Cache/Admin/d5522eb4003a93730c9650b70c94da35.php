@@ -65,6 +65,4 @@
     <script src="http://localhost/base/Static/Resource/js/common.js"></script>
     
     
-    <!--<script src="http://localhost/base/Static/Resource/plugins/layer/layer.js"></script>-->
-
 </html>

@@ -28,6 +28,7 @@ class UploaderController extends Controller {
 	public function form() {
 //		$this->ajaxReturn($this->fetch());
 
+		$this->assign('title','上传图片');
 		$this->display();
 	}
 
