@@ -36,13 +36,13 @@ class IndexController extends Controller
 
                 if (!validate_form_token($form_token)) {
                     $this->error('非法提交！');
-                }else{
+                } else {
                     //token验证通过后注销token
                     form_token(false);
                 }
 
-                $service = new IndexService();
-                $result = $service->validate_system_user($name, $password);
+                $index_service = new IndexService();
+                $result = $index_service->validate_system_user($name, $password);
 
                 if ($result === NULL) {
                     $this->error('账号或密码有误，请确认后再试');

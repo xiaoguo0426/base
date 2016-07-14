@@ -15,11 +15,13 @@ use Admin\Model\IndexModel;
  *
  * @author laoguo
  */
-class IndexService {
+class IndexService
+{
 
     private $model = '';
 
-    public function __construct() {
+    public function __construct()
+    {
 
         $this->model = new IndexModel();
     }
@@ -30,7 +32,8 @@ class IndexService {
      * @param type $password
      * @return type
      */
-    public function validate_system_user($name, $password) {
+    public function validate_system_user($name, $password)
+    {
 
         $map = array(
             "name" => $name,

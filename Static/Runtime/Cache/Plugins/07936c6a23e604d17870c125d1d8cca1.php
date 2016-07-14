@@ -2,7 +2,7 @@
     <div class="modal-dialog">
             <div class="modal-content animated fadeIn">
                 
-                    <form method="POST" action="/base/index.php/Plugins/Uploader/form" class="form-horizontal" data-ajax="true" onsubmit="false">
+                    <form method="POST" action="/base/index.php/Plugins/Uploader/form" class="form-horizontal" data-ajax="true" onsubmit="return false">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <h3 class="modal-title"><?php echo ($title); ?></h3>
@@ -35,7 +35,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-white" data-dismiss="modal">关&nbsp;闭</button>
-                            <button type="button" class="btn btn-primary">保&nbsp;存</button>
+                            <button type="submit" class="btn btn-primary">保&nbsp;存</button>
                         </div>
                     </form>
                 

@@ -180,7 +180,11 @@
 
     <!-- Mainly scripts -->
     <script src="http://localhost/base/Static/Resource/js/jquery-2.1.1.js"></script>
-
+    <script src="http://localhost/base/Static/Resource/plugins/layer/layer.js"></script>
+    <script src="http://localhost/base/Static/Resource/plugins/validate/jquery.validate.js"></script>
+    <script src="http://localhost/base/Static/Resource/plugins/validate/dist/messages_zh.min.js"></script>
+    <script src="http://localhost/base/Static/Resource/plugins/validate/validate.extend.js"></script>
+    <script src="http://localhost/base/Static/Resource/js/common.js"></script>
     <script src="http://localhost/base/Static/Resource/js/bootstrap.min.js"></script>
     <script src="http://localhost/base/Static/Resource/js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="http://localhost/base/Static/Resource/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
@@ -192,7 +196,6 @@
     <script src="http://localhost/base/Static/Resource/js/inspinia.js"></script>
     <script src="http://localhost/base/Static/Resource/js/plugins/pace/pace.min.js"></script>
 
-    <script src="http://localhost/base/Static/Resource/js/common.js"></script>
     
     
 </html>

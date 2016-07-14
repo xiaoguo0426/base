@@ -2,7 +2,7 @@
     <div class="modal-dialog">
             <div class="modal-content animated fadeIn">
                 
-                    <form method="POST" action="/base/index.php/Admin/Menu/form" class="form-horizontal" data-ajax="true" onsubmit="false">
+                    <form method="POST" action="/base/index.php/Admin/Menu/form" class="form-horizontal" data-ajax="true" onsubmit="return false">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <h3 class="modal-title"><?php echo ($title); ?></h3>
@@ -21,7 +21,7 @@
     </div>
     <div class="form-group"><label class="col-lg-2 control-label">菜单名称</label>
         <div class="col-lg-10">
-            <input type="text" name="name" placeholder="菜单名称" class="form-control" required>
+            <input type="text" name="name" placeholder="菜单名称" class="form-control" autofocus="true">
         </div>
     </div>
     <div class="form-group"><label class="col-lg-2 control-label">节点选择</label>
@@ -31,7 +31,7 @@
     </div>
     <div class="form-group"><label class="col-lg-2 control-label">链接地址</label>
         <div class="col-lg-10">
-            <input type="text" name="path" placeholder="链接地址;#" class="form-control" required>
+            <input type="text" name="path" placeholder="链接地址" class="form-control">
         </div>
     </div>
     <div class="form-group"><label class="col-lg-2 control-label">图标样式</label>
@@ -61,11 +61,12 @@
         </div>
     </div>
     <input type="hidden" name="id" value="<?php echo ((isset($vo["id"]) && ($vo["id"] !== ""))?($vo["id"]):0); ?>"/>
+    <input name="form_token" type="hidden" value="<?php echo ($form_token); ?>"/>
 
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-white" data-dismiss="modal">关&nbsp;闭</button>
-                            <button type="button" class="btn btn-primary">保&nbsp;存</button>
+                            <button type="submit" class="btn btn-primary">保&nbsp;存</button>
                         </div>
                     </form>
                 
@@ -75,11 +76,11 @@
     
     
     <script>
-        $("button[data-modal]").on('click',function () {
-            var param = {};
-            param.url = $(this).data('modal');
-            $.form.load(param);
-        });
+//        $("button[data-modal]").on('click', function () {
+//            var param = {};
+//            param.url = $(this).data('modal');
+//            $.form.load(param);
+//        });
     </script>
 
 </div>

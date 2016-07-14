@@ -9,6 +9,10 @@ function get_now_date()
     return date('Y-m-d H:i:s');
 }
 
+function get_user_id(){
+    return session('user.id');
+}
+
 /**
  * 获得当前域名   不带/
  * @staticvar type $domain

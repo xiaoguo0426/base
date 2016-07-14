@@ -1343,7 +1343,8 @@
 				var icon = $(this).text().trim();
 				$("input[name=icon]").val(icon);
 				$("button[data-icon]").empty().append("<i class='"+icon+"'></i>");
-				$(window._modal).modal('hide');
+//				$(window._modal).modal('hide');
+                _modal.modal('hide');
 			});
 		});
 	</script>

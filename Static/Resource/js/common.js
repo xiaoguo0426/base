@@ -13,10 +13,10 @@
      * @returns {undefined}
      */
     _app.prototype.init = function () {
-        $.getScript(_RES_ + "/plugins/layer/layer.js");
-        $.getScript(_RES_ + "/plugins/validate/jquery.validate.js");
-        $.getScript(_RES_ + "/plugins/validate/dist/messages_zh.min.js");
-        $.getScript(_RES_ + "/plugins/validate/validate.extend.js");
+        // $.getScript(_RES_ + "/plugins/layer/layer.js");
+        // $.getScript(_RES_ + "/plugins/validate/jquery.validate.js");
+        // $.getScript(_RES_ + "/plugins/validate/dist/messages_zh.min.js");
+        // $.getScript(_RES_ + "/plugins/validate/validate.extend.js");
     };
 
     function _form() {
@@ -48,7 +48,7 @@
             complete: function (XMLHttpRequest, textStatus) {
                 layer.close(index);
             },
-            success: function (res,textStatus) {
+            success: function (res, textStatus) {
 
                 if (typeof res === 'object') {
                     if (res.status === 1) {
@@ -63,7 +63,7 @@
 
                     } else {
                         layer.msg(res.info || '操作失败！', {icon: 2});
-                        layer.close();
+                        layer.close(index);
                     }
                 }
                 // var _modal = $(res);
@@ -72,7 +72,7 @@
                 // $('.modal').modal('show').on('hidden.bs.modal',function(){
                 //     _modal.remove();
                 // });
-                $(res).appendTo('body').modal('show').on('hidden.bs.modal',function () {
+                window._modal = $(res).appendTo('body').modal('show').on('hidden.bs.modal', function () {
                     $(this).remove();
                 });
             },
@@ -104,6 +104,7 @@ $(function () {
     $("body > *")
         .on('click', '[data-ajax]', function () {
             var $_form = $(this);
+            // alert('123123');
             $_form.validate({
                 //验证通过后回掉函数
                 submitHandler: function () {
@@ -115,16 +116,16 @@ $(function () {
                 }
             });
         }).on('click', '[data-logout]', function () {
-            //退出登陆
-            param.url = _APP_+"/Admin/Index/logout";
-            param.method = "POST";
+        //退出登陆
+        param.url = _APP_ + "/Admin/Index/logout";
+        param.method = "POST";
 
-            confirm('确定要退出系统？') && $.form.load(param);
-        }).on('click', '[data-modal]', function () {
-            var $_form = $(this);
-            //同步加载模态框
-            param.url = $_form.data('modal');
-            $.form.load(param);
-        });
+        confirm('确定要退出系统？') && $.form.load(param);
+    }).on('click', '[data-modal]', function () {
+        var $_form = $(this);
+        //同步加载模态框
+        param.url = $_form.data('modal');
+        $.form.load(param);
+    });
 });
 
