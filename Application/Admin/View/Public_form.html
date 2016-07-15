@@ -1,24 +1,26 @@
 <div class="modal" data-keyboard='false' data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
-            <div class="modal-content animated fadeIn">
-                <block name="content">
-                    <form method="POST" action="__ACTION__" class="form-horizontal" data-ajax="true" onsubmit="return false">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h3 class="modal-title">{$title}</h3>
-                        </div>
-                        <div class="modal-body" style="padding: 15px;">
-                            <block name="form">
+        <div class="modal-content animated fadeIn">
+            <block name="content">
+                <form method="POST" action="__ACTION__" class="form-horizontal" data-ajax="true"
+                      onSubmit="return false;">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title">{$title}</h3>
+                    </div>
+                    <div class="modal-body" style="padding: 15px;">
+                        <block name="form">
 
-                            </block>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-white" data-dismiss="modal">关&nbsp;闭</button>
-                            <button type="submit" class="btn btn-primary">保&nbsp;存</button>
-                        </div>
-                    </form>
-                </block>
-            </div>
+                        </block>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-white" data-dismiss="modal">关&nbsp;闭</button>
+                        <button type="submit" class="btn btn-primary">保&nbsp;存</button>
+                    </div>
+                </form>
+            </block>
+        </div>
     </div>
     <!-- 这两个block一定要放到这里，不然模态框显示的时候，背景会有多重重影 -->
     <block name="style"></block>

@@ -1,0 +1,6 @@
+[ 2016-07-15T20:59:46+08:00 ] ::1 /base/index.php/base/index.php/Admin/Index/index.shtml.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+ERR: 无法加载模块:Base
+

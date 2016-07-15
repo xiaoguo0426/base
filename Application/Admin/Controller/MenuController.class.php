@@ -3,14 +3,13 @@
 namespace Admin\Controller;
 
 use Admin\Service\MenuService;
-use Think\Controller;
 
 /**
  * 菜单控制器
  *
  * @author laoguo
  */
-class MenuController extends Controller
+class MenuController extends BaseController
 {
 
     protected $title = '菜单管理';
@@ -39,9 +38,11 @@ class MenuController extends Controller
                     form_token(false);
                 }
 
+                print_r($post);
                 $menu_service = new MenuService();
                 if (empty($post['id'])) {
                     //add
+                    print_r('add');
                     $result = $menu_service->add($post);
                 } else {
                     //edit

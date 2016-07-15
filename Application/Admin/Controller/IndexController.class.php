@@ -13,11 +13,8 @@ class IndexController extends Controller
      */
     public function index()
     {
-        if (is_login()) {
-            $this->display();
-        } else {
-            redirect(U('login'));
-        }
+
+        $this->display();
     }
 
     /**
@@ -68,7 +65,7 @@ class IndexController extends Controller
             }
         } else {
             if (is_login()) {
-                $this->redirect('index');
+                redirect(U('index'));
             } else {
                 $this->assign('form_token', form_token(true, C('FORM_TYPE.REGISTER')));
                 $this->display();

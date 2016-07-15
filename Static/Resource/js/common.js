@@ -72,7 +72,9 @@
                 // $('.modal').modal('show').on('hidden.bs.modal',function(){
                 //     _modal.remove();
                 // });
-                window._modal = $(res).appendTo('body').modal('show').on('hidden.bs.modal', function () {
+
+                //动态添加的html一定要在common.js之前，不然动态添加的html是没有办法事件绑定的
+                window._modal = $(res).appendTo('#wrapper').modal('show').on('hidden.bs.modal', function () {
                     $(this).remove();
                 });
             },
@@ -104,7 +106,7 @@ $(function () {
     $("body > *")
         .on('click', '[data-ajax]', function () {
             var $_form = $(this);
-            // alert('123123');
+            console.log($_form);
             $_form.validate({
                 //验证通过后回掉函数
                 submitHandler: function () {
