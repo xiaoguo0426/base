@@ -102,7 +102,7 @@ class IndexController extends Controller
             $footer = "</ul></li>";
             unset($value[0]);
             foreach ($value as $k => $v) {
-                $body .= "<li><a href='" . $v['path'] . "'>" . $v['name'] . "</a></li>";
+                $body .= "<li><a href='" . U($v['path']) . "'>" . $v['name'] . "</a></li>";
             }
             $html .= $header . $body . $footer;
             $body = "";

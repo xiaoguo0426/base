@@ -54,6 +54,12 @@ class MenuService
         return $this->model->update($params['id'], $params);
     }
 
+    public function get_all_menu($fields = "*")
+    {
+        $order = "parent_id ASC,sort ASC";
+        return $this->model->get_menu(array(), $fields, "", $order);
+    }
+
     /**
      * 获取启用状态的菜单
      * @return mixed
@@ -68,15 +74,37 @@ class MenuService
     /**
      * 将菜单生成一棵树状结构
      */
-    public function get_tree_menu($menu){
+    public function get_tree_menu($menu)
+    {
+        if (empty($menu)) {
+            return array();
+        }
         $temp = [];
-        foreach($menu as $key => $value){
-            if ($value['parent_id'] == 0){
+        foreach ($menu as $key => $value) {
+            if ($value['parent_id'] == 0) {
                 //一级菜单
                 $temp[$value['id']][] = $value;
-            }else{
+            } else {
                 //二级菜单
                 $temp[$value['parent_id']][] = $value;
+            }
+        }
+        return $temp;
+    }
+
+    /**
+     * 将三维菜单转为一维菜单
+     * @param $menu
+     */
+    public function get_list_menu($menu)
+    {
+        if (empty($menu)) {
+            return array();
+        }
+        $temp = [];
+        foreach ($menu as $key => $value) {
+            foreach ($value as $k => $v) {
+                $temp[] = $v;
             }
         }
         return $temp;

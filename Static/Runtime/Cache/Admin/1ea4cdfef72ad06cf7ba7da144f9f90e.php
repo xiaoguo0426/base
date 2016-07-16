@@ -50,11 +50,6 @@
     <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
             <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-            <form role="search" class="navbar-form-custom" action="search_results.html">
-                <div class="form-group">
-                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
-                </div>
-            </form>
         </div>
         <ul class="nav navbar-top-links navbar-right">
             <li>
@@ -157,14 +152,14 @@
 
 <script src="http://localhost/base/Static/Resource/js/jquery-2.1.1.js"></script>
 <script>
-    window._APP_ = '/base/index.php';
+    window._APP_ = '/base';
     window._RES_ = 'http://localhost/base/Static/Resource';
-    window._SELF_ = '/base/';
+    window._SELF_ = '/base/Admin/Index/index.shtml';
     load_menu();
     function load_menu() {
         $.ajax({
             type: 'GET',
-            url: "index.php/Admin/Index/get_tree_menu",
+            url: "<?php echo U('Admin/Index/get_tree_menu');?>",
             async: false,
             success: function (res) {
                 if (typeof res === 'string') {

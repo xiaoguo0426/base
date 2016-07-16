@@ -82,3 +82,16 @@ function validate_form_token($token = '')
 
     return FormToken::validate_token($token);
 }
+
+
+function show_button_status($status){
+    switch (intval($status)){
+        case 0:
+            return '<button type="button" class="btn btn-w-m btn-danger">禁&nbsp;用</button>';
+        case 1:
+            return '<button type="button" class="btn btn-w-m btn-primary">启&nbsp;用</button>';
+
+        default:
+            return "未知状态";
+    }
+}

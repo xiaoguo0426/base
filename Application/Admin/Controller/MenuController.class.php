@@ -16,7 +16,11 @@ class MenuController extends BaseController
 
     public function index()
     {
+        $menu_service = new MenuService();
+        $menu = $menu_service->get_all_menu("*");
+        $list = $menu_service->get_list_menu(array_values($menu_service->get_tree_menu($menu)), null);
 
+        $this->assign('list', $list);
         $this->assign('title', $this->title);
         $this->display();
     }

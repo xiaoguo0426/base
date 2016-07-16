@@ -4,7 +4,7 @@ return array(
     /* 默认模块 */
     'DEFAULT_MODULE' => 'Admin',
     /* 设定URL模式 */
-    'URL_MODEL' => 1, // URL访问模式
+    'URL_MODEL' => 2, // URL访问模式
     'URL_HTML_SUFFIX' => '.shtml', // URL静态化后缀
 
     /* 模板设置 */

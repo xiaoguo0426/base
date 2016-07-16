@@ -76,7 +76,7 @@
     function load_menu() {
         $.ajax({
             type: 'GET',
-            url: "index.php/Admin/Index/get_tree_menu",
+            url: "{:U('Admin/Index/get_tree_menu')}",
             async: false,
             success: function (res) {
                 if (typeof res === 'string') {
