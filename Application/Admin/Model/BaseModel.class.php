@@ -21,7 +21,7 @@ class BaseModel extends Model
      */
     public function find_base(array $where, $field = "*")
     {
-        return $this->field($field)->where($where)->limit(1)->find();
+        return $this->field($field)->where($where)->find();
     }
 
     /**
@@ -29,9 +29,16 @@ class BaseModel extends Model
      * @param array $where
      * @param string $field
      */
-    public function select_base(array $where, $field = "*", $order = "id DESC", $limit = "0,20")
+    public function select_base(array $where, $field = "*", $limit = "0,20", $order = "id DESC")
     {
-        return $this->field($field)->where($where)->limit($limit)->order($order)->find();
+        $command = $this->field($field)->where($where);
+        if (!empty($limit)) {
+            $command = $command->limit($limit);
+        }
+        if (!empty($order)) {
+            $command = $command->order($order);
+        }
+        return $command->select();
     }
 
     /**
@@ -39,13 +46,15 @@ class BaseModel extends Model
      * @param array $params
      * @return mixed
      */
-    public function add(array $params){
+    public function insert(array $params)
+    {
         return $this->add($params);
     }
 
 
-    public function update($where,$params){
-        return $this->where("id = ".$where)->save($params);
+    public function update($where, $params)
+    {
+        return $this->where("id = " . $where)->save($params);
     }
 
 

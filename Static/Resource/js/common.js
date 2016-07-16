@@ -106,7 +106,6 @@ $(function () {
     $("body > *")
         .on('click', '[data-ajax]', function () {
             var $_form = $(this);
-            console.log($_form);
             $_form.validate({
                 //验证通过后回掉函数
                 submitHandler: function () {
@@ -129,5 +128,8 @@ $(function () {
         param.url = $_form.data('modal');
         $.form.load(param);
     });
+
 });
+
+
 

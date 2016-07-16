@@ -41,7 +41,43 @@
 					IN+
 				</div>
 			</li>
-            <?php echo W('AdminMenuget_tree_menu');?>
+			<li class="active">
+				<a href="#">
+					<i class="fa fa-th-large"></i> 
+					<span class="nav-label">Dashboards</span> 
+					<span class="fa arrow"></span>
+				</a>
+				<ul class="nav nav-second-level collapse">
+					<li class="active"><a href="index.html">Dashboard v.1</a></li>
+					<li><a href="dashboard_2.html">Dashboard v.2</a></li>
+					<li><a href="dashboard_3.html">Dashboard v.3</a></li>
+					<li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span></a>
+				<ul class="nav nav-second-level collapse">
+					<li><a href="graph_flot.html">Flot Charts</a></li>
+					<li><a href="graph_morris.html">Morris.js Charts</a></li>
+					<li><a href="graph_rickshaw.html">Rickshaw Charts</a></li>
+					<li><a href="graph_chartjs.html">Chart.js</a></li>
+					<li><a href="graph_chartist.html">Chartist</a></li>
+					<li><a href="graph_peity.html">Peity Charts</a></li>
+					<li><a href="graph_sparkline.html">Sparkline Charts</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">系统设置</span><span class="fa arrow"></span></a>
+				<ul class="nav nav-second-level collapse">
+					<li><a href="<?php echo U('Admin/Menu/index');?>">菜单管理</a></li>
+					<li><a href="<?php echo U('Admin/Menu/form');?>">角色管理</a></li>
+					<li><a href="#">用户管理</a></li>
+					<li><a href="#">系统管理</a></li>
+				</ul>
+			</li>
 		</ul>
 	</div>
 </nav>
@@ -138,7 +174,7 @@
     <script>
 		window._APP_ = '/base/index.php';
 		window._RES_ = 'http://localhost/base/Static/Resource';
-		window._SELF_ = '/base/index.php/Admin/Menu/index.shtml';
+		window._SELF_ = '/base/index.php/Admin/Menu/Index/login.shtml';
     </script>
 
     <!-- Mainly scripts -->

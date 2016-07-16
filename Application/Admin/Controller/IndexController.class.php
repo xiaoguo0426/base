@@ -13,8 +13,12 @@ class IndexController extends Controller
      */
     public function index()
     {
+        if (is_login()) {
+            $this->display();
+        } else {
+            redirect(U('login'));
+        }
 
-        $this->display();
     }
 
     /**
@@ -83,6 +87,27 @@ class IndexController extends Controller
             session('user', NULL);
             $this->success('退出成功！正在跳转...', U('Admin/Index/login'), 1);
         }
+    }
+
+    public function get_tree_menu()
+    {
+        $menu_service = new \Admin\Service\MenuService();
+        $active_menu = $menu_service->get_active_menu("id,name,parent_id,path,sort,icon");
+        $menu = array_values($menu_service->get_tree_menu($active_menu));
+
+        $body = "";
+        $html = "";
+        foreach ($menu as $key => $value) {
+            $header = "<li><a href='#'><i class='".$value[0]['icon']."'></i><span class='nav-label'>" . $value[0]['name'] . "</span><span class='fa arrow'></span></a><ul class='nav nav-second-level collapse'>";
+            $footer = "</ul></li>";
+            unset($value[0]);
+            foreach ($value as $k => $v) {
+                $body .= "<li><a href='" . $v['path'] . "'>" . $v['name'] . "</a></li>";
+            }
+            $html .= $header . $body . $footer;
+            $body = "";
+        }
+        $this->ajaxReturn($html);
     }
 
 }

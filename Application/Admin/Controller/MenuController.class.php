@@ -21,6 +21,9 @@ class MenuController extends BaseController
         $this->display();
     }
 
+    /**
+     * 添加菜单
+     */
     public function form()
     {
         if (IS_POST) {
@@ -29,30 +32,25 @@ class MenuController extends BaseController
                 $this->error($user->getError());
             } else {
                 $post = I('post.');
-
+//                print_r($post);
                 $form_token = $post['form_token'];
                 if (!validate_form_token($form_token)) {
                     $this->error('非法提交！');
                 } else {
                     //token验证通过后注销token
                     form_token(false);
+                    unset($post['form_token']);
                 }
-
-                print_r($post);
                 $menu_service = new MenuService();
                 if (empty($post['id'])) {
                     //add
-                    print_r('add');
-                    $result = $menu_service->add($post);
+                    unset($post['id']);
+                    $result = $menu_service->insert($post);
                 } else {
                     //edit
                     $result = $menu_service->update($post);
                 }
-//                if ($result === false){
-//                    $this->error('操作失败！');
-//                }else{
-//                    $this->success('操作成功！');
-//                }
+
                 $result === false ? $this->error('操作失败！') : $this->success('操作成功！');
             }
         } else {
@@ -61,4 +59,16 @@ class MenuController extends BaseController
             $this->display();
         }
     }
+
+    /**
+     * 加载菜单
+     */
+    public function load_menu()
+    {
+        $menu_service = new MenuService();
+        $active_menu = $menu_service->get_active_menu("id,name,parent_id,sort");
+        $menu = $menu_service->get_tree_menu($active_menu);
+        $this->ajaxReturn(array_values($menu), 'JSON');
+    }
+
 }

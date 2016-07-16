@@ -9,7 +9,8 @@ namespace Admin\Model;
  *
  * @author laoguo
  */
-class MenuModel extends BaseModel {
+class MenuModel extends BaseModel
+{
 
     protected $tableName = 'system_menu';
     protected $_validate = array(
@@ -19,7 +20,12 @@ class MenuModel extends BaseModel {
         array('path', 'require', '路径不能为空！'),
         array('icon', 'require', '图标不能为空！'),
         array('sort', 'require', '排序不能为空！'),
-        array('form_token','require','非法提交！')
+        array('form_token', 'require', '非法提交！')
     );
+
+    public function get_menu($where = "", $fields = "*", $limit = "", $order = "")
+    {
+        return $this->select_base($where, $fields, $limit, $order);
+    }
 
 }

@@ -13,11 +13,8 @@
                         
     <div class="form-group"><label class="col-lg-2 control-label">上级菜单</label>
         <div class="col-lg-10">
-            <select class="form-control m-b" name="parent">
+            <select class="form-control m-b" name="parent_id">
                 <option value="0">主菜单</option>
-                <option value="1">option 2</option>
-                <option value="2">option 3</option>
-                <option value="3">option 4</option>
             </select>
         </div>
     </div>
@@ -47,7 +44,7 @@
     </div>
     <div class="form-group"><label class="col-lg-2 control-label">排序</label>
         <div class="col-lg-10">
-            <input type="text" name="sort" value="0" class="form-control" required="">
+            <input type="text" name="sort" value="" class="form-control" required="">
         </div>
     </div>
     <div class="form-group"><label class="col-lg-2 control-label">状态</label>
@@ -78,11 +75,34 @@
     
     
     <script>
-        $("button[data-modal]").on('click', function () {
-            var param = {};
-            param.url = $(this).data('modal');
-            $.form.load(param);
+        $(function () {
+            load_menu();
         });
+        //加载菜单
+        function load_menu() {
+            $.ajax({
+                type: 'GET',
+                url: "<?php echo U('load_menu');?>",
+                success: function (res) {
+                    if (res.length !== 0) {
+                        var options = [], result = [];
+                        res.forEach(function (item, index) {
+                            item.forEach(function (o, i) {
+                                if (parseInt(o.parent_id) !== 0) {
+                                    //二级菜单
+                                    options[o.parent_id].push("<option value='" + o.id + "'>&emsp;--" + o.name + "</option>");
+                                } else {
+                                    //一级菜单
+                                    options[o.id] = [];
+                                    options[o.id].push("<option value='" + o.id + "'>" + o.name + "</option>");
+                                }
+                            });
+                        });
+                        $("select[name='parent_id']").append(options.join(""));
+                    }
+                }
+            });
+        }
     </script>
 
 </div>

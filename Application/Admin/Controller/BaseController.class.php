@@ -20,7 +20,7 @@ class BaseController extends Controller
         parent::__construct();
 
         if (!is_login()) {
-            redirect(U('login'));
+            redirect(U('Admin\Index\login'));
         }
     }
 
