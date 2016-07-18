@@ -23,9 +23,16 @@ class MenuModel extends BaseModel
         array('form_token', 'require', '非法提交！')
     );
 
+    /**
+     * 根据指定的条件获取菜单
+     * @param string $where
+     * @param string $fields
+     * @param string $limit
+     * @param string $order
+     * @return mixed
+     */
     public function get_menu($where = "", $fields = "*", $limit = "", $order = "")
     {
         return $this->select_base($where, $fields, $limit, $order);
     }
-
 }

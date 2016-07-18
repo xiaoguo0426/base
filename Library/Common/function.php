@@ -1,5 +1,6 @@
 <?php
 use Vendor\FormToken\FormToken;
+
 /**
  * 获得当前时间
  * @return type
@@ -9,7 +10,8 @@ function get_now_date()
     return date('Y-m-d H:i:s');
 }
 
-function get_user_id(){
+function get_user_id()
+{
     return session('user.id');
 }
 
@@ -83,9 +85,10 @@ function validate_form_token($token = '')
     return FormToken::validate_token($token);
 }
 
-
-function show_button_status($status){
-    switch (intval($status)){
+//状态
+function show_button_status($status)
+{
+    switch (intval($status)) {
         case 0:
             return '<button type="button" class="btn btn-w-m btn-danger">禁&nbsp;用</button>';
         case 1:
@@ -94,4 +97,24 @@ function show_button_status($status){
         default:
             return "未知状态";
     }
+}
+
+//启用/禁用开关按钮
+function show_toggle_button($status, $vo)
+{
+    switch (intval($status)) {
+        case 0:
+            return '<button type="button" class="btn btn-w-m btn-primary" data-resume="' . U('resume') . '" data-id="' . $vo['id'] . '" data-form_token = "">启&nbsp;用</button>';
+        case 1:
+
+            return '<button type="button" class="btn btn-w-m btn-danger" data-forbid="' . U('forbid') . '" data-id="' . $vo['id'] . '" data-form_token = "">禁&nbsp;用</button>';
+        default:
+            return "未知状态";
+    }
+}
+
+//编辑按钮
+function show_edit_button($id)
+{
+    return '<button type="button" class="btn btn-w-m btn-primary" data-path="' . U(__CONTROLLER__ . '/form') . '" data-id="' . $id . '">编&nbsp;辑</button>';
 }

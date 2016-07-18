@@ -2,14 +2,14 @@
     <div class="modal-dialog">
         <div class="modal-content animated fadeIn">
             
-                <form method="POST" action="/base/index.php/Admin/Menu/form" class="form-horizontal" data-ajax="true"
+                <form method="POST" action="/base/Admin/Menu/form" class="form-horizontal" data-ajax="true"
                       onSubmit="return false;">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                 aria-hidden="true">&times;</span></button>
                         <h3 class="modal-title"><?php echo ($title); ?></h3>
                     </div>
-                    <div class="modal-body" style="padding: 15px;">
+                    <div class="modal-body" style="">
                         
     <div class="form-group"><label class="col-lg-2 control-label">上级菜单</label>
         <div class="col-lg-10">

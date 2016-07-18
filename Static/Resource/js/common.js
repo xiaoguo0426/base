@@ -105,14 +105,14 @@ $(function () {
     window._modal = "";
     $("body > *")
         .on('click', '[data-ajax]', function () {
-            var $_form = $(this);
-            $_form.validate({
+            var _self = $(this);
+            _self.validate({
                 //验证通过后回掉函数
                 submitHandler: function () {
-                    param.url = $_form.attr('action');
-                    param.data = $_form.serializeArray();
-                    param.method = $_form.attr('method');
-                    param.tips = $_form.data('tips');
+                    param.url = _self.attr('action');
+                    param.data = _self.serializeArray();
+                    param.method = _self.attr('method');
+                    param.tips = _self.data('tips');
                     $.form.load(param);
                 }
             });
@@ -123,9 +123,26 @@ $(function () {
 
         confirm('确定要退出系统？') && $.form.load(param);
     }).on('click', '[data-modal]', function () {
-        var $_form = $(this);
+        var _self = $(this);
         //同步加载模态框
-        param.url = $_form.data('modal');
+        param.url = _self.data('modal');
+        $.form.load(param);
+    }).on('click', '[data-resume]', function () {
+        var _self = $(this);
+        param.url = _self.data('path');
+        param.data = _self.data('id');
+
+    }).on('click', '[data-forbid]', function () {
+        var _self = $(this);
+        param.url = _self.data('forbid');
+        param.data = {"id": _self.data('id') || ""};
+        param.method = "POST";
+        $.form.load(param);
+    }).on('click', '[data-resume]', function () {
+        var _self = $(this);
+        param.url = _self.data('resume');
+        param.data = {"id": _self.data('id') || ""};
+        param.method = "POST";
         $.form.load(param);
     });
 

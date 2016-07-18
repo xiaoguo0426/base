@@ -36,7 +36,6 @@ class MenuController extends BaseController
                 $this->error($user->getError());
             } else {
                 $post = I('post.');
-//                print_r($post);
                 $form_token = $post['form_token'];
                 if (!validate_form_token($form_token)) {
                     $this->error('非法提交！');

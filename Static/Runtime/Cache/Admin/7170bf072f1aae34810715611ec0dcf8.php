@@ -97,19 +97,6 @@
     </tr>
     </thead>
     <tbody>
-    <!--<tr>-->
-    <!--<td>1</td>-->
-    <!--<td>Project-->
-    <!--<small>This is example of project</small>-->
-    <!--</td>-->
-    <!--<td>Patrick Smith</td>-->
-    <!--<td>-->
-    <!--<button type="button" class="btn btn-sm btn-primary" data-modal="<?php echo U('Plugins/Uploader/form');?>">上传图片-->
-    <!--</button>-->
-    <!--</td>-->
-    <!--<td>Inceptos Hymenaeos Ltd</td>-->
-    <!--<td><span class="pie">0.52/1.561</span></td>-->
-    <!--</tr>-->
     <?php if(is_array($list)): $k = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
             <td><?php echo ($k); ?></td>
             <td><?php echo is_parent_menu($vo['parent_id']); echo ($vo["name"]); ?></td>
@@ -122,7 +109,7 @@
                 </button>
             </td>
             <td><?php echo show_button_status($vo['status']);?></td>
-            <td><span class="pie">0.52/1.561</span></td>
+            <td><?php echo show_toggle_button($vo['status'],$vo); echo show_edit_button($vo['id']);?></td>
         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
     </tbody>
 

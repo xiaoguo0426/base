@@ -1,0 +1,18 @@
+[ 2016-07-18T11:30:05+08:00 ] ::1 /base/Static/Resource/css/plugins/images/sort_both.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+ERR: 无法加载模块:Static
+
+[ 2016-07-18T12:51:59+08:00 ] ::1 /base/base/Admin/Menu/forbid.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001196s ]
+ERR: 无法加载模块:Base
+
+[ 2016-07-18T15:11:00+08:00 ] ::1 /base/Static/Resource/css/plugins/images/sort_both.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+ERR: 无法加载模块:Static
+

@@ -14,19 +14,6 @@
     </tr>
     </thead>
     <tbody>
-    <!--<tr>-->
-    <!--<td>1</td>-->
-    <!--<td>Project-->
-    <!--<small>This is example of project</small>-->
-    <!--</td>-->
-    <!--<td>Patrick Smith</td>-->
-    <!--<td>-->
-    <!--<button type="button" class="btn btn-sm btn-primary" data-modal="{:U('Plugins/Uploader/form')}">上传图片-->
-    <!--</button>-->
-    <!--</td>-->
-    <!--<td>Inceptos Hymenaeos Ltd</td>-->
-    <!--<td><span class="pie">0.52/1.561</span></td>-->
-    <!--</tr>-->
     <volist name="list" id="vo" key="k">
         <tr>
             <td>{$k}</td>
@@ -40,7 +27,7 @@
                 </button>
             </td>
             <td>{:show_button_status($vo['status'])}</td>
-            <td><span class="pie">0.52/1.561</span></td>
+            <td>{:show_toggle_button($vo['status'],$vo)}{:show_edit_button($vo['id'])}</td>
         </tr>
     </volist>
     </tbody>

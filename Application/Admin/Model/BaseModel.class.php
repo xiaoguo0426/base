@@ -57,5 +57,24 @@ class BaseModel extends Model
         return $this->where("id = " . $where)->save($params);
     }
 
+    /**
+     * 禁用数据
+     * @param $where
+     * @return bool
+     */
+    public function forbid($where)
+    {
+        return $this->where($where)->save(array("status" => 0));
+    }
+
+    /**
+     * 啓用數據
+     * @param $where
+     * @return bool
+     */
+    public function resume($where)
+    {
+        return $this->where($where)->save(array('status' => 1));
+    }
 
 }
