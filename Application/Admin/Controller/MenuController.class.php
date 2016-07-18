@@ -57,7 +57,16 @@ class MenuController extends BaseController
                 $result === false ? $this->error('操作失败！') : $this->success('操作成功！');
             }
         } else {
-            $this->assign('title', '菜单添加');
+            $id = I('get.id');
+            if (empty($id)) {
+                $title = '菜单添加';
+            } else {
+                $title = '菜单编辑';
+                $menu_service = new MenuService();
+                $vo = $menu_service->get_detail_menu($id);
+                $this->assign('vo', $vo);
+            }
+            $this->assign('title', $title);
             $this->assign('form_token', form_token(true, C('FORM_TYPE.REGISTER')));
             $this->display();
         }

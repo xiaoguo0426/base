@@ -20,7 +20,8 @@
     </div>
     <div class="form-group"><label class="col-lg-2 control-label">菜单名称</label>
         <div class="col-lg-10">
-            <input type="text" name="name" placeholder="菜单名称" class="form-control" autofocus="true" required="">
+            <input type="text" name="name" value="<?php echo ($vo["name"]); ?>" placeholder="菜单名称" class="form-control" autofocus="true"
+                   required="">
         </div>
     </div>
     <div class="form-group"><label class="col-lg-2 control-label">节点选择</label>
@@ -30,13 +31,13 @@
     </div>
     <div class="form-group"><label class="col-lg-2 control-label">链接地址</label>
         <div class="col-lg-10">
-            <input type="text" name="path" placeholder="链接地址" class="form-control" required="">
+            <input type="text" name="path" value="<?php echo ($vo["path"]); ?>" placeholder="链接地址" class="form-control" required="">
         </div>
     </div>
     <div class="form-group"><label class="col-lg-2 control-label">图标样式</label>
         <div class="col-lg-10">
             <input type="hidden" name="icon" value=""/>
-            <button class="btn btn-success  dim" type="button" data-icon><i class="fa fa-upload"></i></button>
+            <button class="btn btn-success  dim" type="button" data-icon><i class="<?php echo ($vo["icon"]); ?>"></i></button>
             <button type="button" class="btn btn-w-m btn-info" data-modal="<?php echo U('Admin/Menu/icons');?>">
                 选择图标
             </button>
@@ -44,7 +45,7 @@
     </div>
     <div class="form-group"><label class="col-lg-2 control-label">排序</label>
         <div class="col-lg-10">
-            <input type="text" name="sort" value="" class="form-control" required="">
+            <input type="text" name="sort" value="<?php echo ($vo["sort"]); ?>" class="form-control" required="">
         </div>
     </div>
     <div class="form-group"><label class="col-lg-2 control-label">状态</label>

@@ -90,9 +90,9 @@ function show_button_status($status)
 {
     switch (intval($status)) {
         case 0:
-            return '<button type="button" class="btn btn-w-m btn-danger">禁&nbsp;用</button>';
+            return '<button type="button" class="btn btn-w-m btn-white text-danger"><i class="fa fa-times text-danger"></i></button>';
         case 1:
-            return '<button type="button" class="btn btn-w-m btn-primary">启&nbsp;用</button>';
+            return '<button type="button" class="btn btn-w-m btn-white text-info"><i class="fa fa-check text-info"></i></button>';
 
         default:
             return "未知状态";
@@ -104,10 +104,10 @@ function show_toggle_button($status, $vo)
 {
     switch (intval($status)) {
         case 0:
-            return '<button type="button" class="btn btn-w-m btn-primary" data-resume="' . U('resume') . '" data-id="' . $vo['id'] . '" data-form_token = "">启&nbsp;用</button>';
+            return '<button type="button" class="btn btn-w-m btn-primary" data-resume="' . U('resume') . '" data-id="' . $vo['id'] . '" data-form_token = ""><i class="fa fa-check"></i>启&nbsp;用</button>';
         case 1:
 
-            return '<button type="button" class="btn btn-w-m btn-danger" data-forbid="' . U('forbid') . '" data-id="' . $vo['id'] . '" data-form_token = "">禁&nbsp;用</button>';
+            return '<button type="button" class="btn btn-w-m btn-danger" data-forbid="' . U('forbid') . '" data-id="' . $vo['id'] . '" data-form_token = ""><i class="fa fa-times"></i>禁&nbsp;用</button>';
         default:
             return "未知状态";
     }
@@ -116,5 +116,5 @@ function show_toggle_button($status, $vo)
 //编辑按钮
 function show_edit_button($id)
 {
-    return '<button type="button" class="btn btn-w-m btn-primary" data-path="' . U(__CONTROLLER__ . '/form') . '" data-id="' . $id . '">编&nbsp;辑</button>';
+    return '<button type="button" class="btn btn-w-m btn-info" data-modal="' . U('form') . '" data-id="' . $id . '"><i class="fa fa-paste"></i>编&nbsp;辑</button>';
 }

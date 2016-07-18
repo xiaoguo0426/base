@@ -125,6 +125,7 @@ $(function () {
     }).on('click', '[data-modal]', function () {
         var _self = $(this);
         //同步加载模态框
+        param.data = {"id": _self.data('id') || ""};
         param.url = _self.data('modal');
         $.form.load(param);
     }).on('click', '[data-resume]', function () {

@@ -110,4 +110,11 @@ class MenuService
         return $temp;
     }
 
+    public function get_detail_menu($id)
+    {
+        $where = array("id" => $id);
+        $result = $this->model->get_menu($where, "*", "0,1", "");
+        return $result[0];
+    }
+
 }
