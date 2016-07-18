@@ -59,14 +59,26 @@ class BaseController extends Controller
             $this->error('参数错误！');
         }
         //控制器名一定要和模型名一致
-        $class = "\\" . MODULE_NAME . "\\Model\\" . CONTROLLER_NAME . "Model";
-        $model = new $class();
+//        $class = "\\" . MODULE_NAME . "\\Model\\" . CONTROLLER_NAME . "Model";
+//        $model = new $class();
+
+        //子类需要指定绑定的模型
+        $model = D($this->_bind_model);
         $result = $model->forbid(array('id' => $id));
         if ($result === false) {
             $this->error('操作失败！');
         } else {
-            $this->success('操作成功！');
+            (false !== $this->_callback_function(__FUNCTION__, $id)) && $this->success('操作成功！');
         }
     }
 
+
+    private function _callback_function($controller, $params)
+    {
+        $method = '_' . $controller . '_filter';
+        if (method_exists($this, $method)) {
+            return $this->$method($params);
+        }
+        return null;
+    }
 }

@@ -11,7 +11,7 @@ use Admin\Service\MenuService;
  */
 class MenuController extends BaseController
 {
-
+    protected $_bind_model = 'Menu';
     protected $title = '菜单管理';
 
     public function index()
@@ -83,4 +83,23 @@ class MenuController extends BaseController
         $this->ajaxReturn(array_values($menu), 'JSON');
     }
 
+    /**
+     * 启用操作回掉方法
+     * 如果启用的是主菜单，则把该菜单下的所有二级菜单全部启用
+     * @param $id       菜单id
+     */
+    protected function _resume_filter($id)
+    {
+
+    }
+
+    /**
+     * 禁用操作回掉方法
+     * 如果禁用的是主菜单，则把该菜单下的所有二级菜单全部禁用
+     * @param $id       菜单id
+     */
+    protected function _forbid_filter($id)
+    {
+
+    }
 }

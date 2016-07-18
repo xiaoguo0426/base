@@ -130,18 +130,13 @@ $(function () {
         $.form.load(param);
     }).on('click', '[data-resume]', function () {
         var _self = $(this);
-        param.url = _self.data('path');
-        param.data = _self.data('id');
-
-    }).on('click', '[data-forbid]', function () {
-        var _self = $(this);
-        param.url = _self.data('forbid');
+        param.url = _self.data('resume');
         param.data = {"id": _self.data('id') || ""};
         param.method = "POST";
         $.form.load(param);
-    }).on('click', '[data-resume]', function () {
+    }).on('click', '[data-forbid]', function () {
         var _self = $(this);
-        param.url = _self.data('resume');
+        param.url = _self.data('forbid');
         param.data = {"id": _self.data('id') || ""};
         param.method = "POST";
         $.form.load(param);

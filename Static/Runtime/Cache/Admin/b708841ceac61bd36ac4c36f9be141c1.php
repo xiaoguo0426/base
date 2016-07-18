@@ -12,6 +12,10 @@
                             <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
                             <span class="glyphicon-class">glyphicon glyphicon-asterisk</span>
                         </li>
+                        <li>
+                            <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                            <span class="glyphicon-class">glyphicon glyphicon-asterisk</span>
+                        </li>
 
                         <li>
                             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
