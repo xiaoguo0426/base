@@ -5,7 +5,8 @@ namespace Admin\Model;
 use Think\Model;
 
 /**
- * Created by PhpStorm.
+ * 基础Model层
+ * 该层不作任何逻辑判断！！！！！！请在业务层和控制层做判断
  * User: 74064
  * Date: 2016/7/14
  * Time: 20:46
@@ -51,10 +52,15 @@ class BaseModel extends Model
         return $this->add($params);
     }
 
-
-    public function update($where, $params)
+    /**
+     * 更新操作
+     * @param array $where
+     * @param array $params
+     * @return bool
+     */
+    public function update(array $where, array $params)
     {
-        return $this->where("id = " . $where)->save($params);
+        return $this->where($where)->save($params);
     }
 
     /**

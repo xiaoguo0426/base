@@ -7,6 +7,11 @@ use Admin\Service\MenuService;
 /**
  * 菜单控制器
  *
+ * 如果启用或者禁用的是主菜单，需要把属于该菜单下的所有子菜单全部禁用。有以下两种解决方法
+ * 1.客户端提交菜单id集合，服务器端不作判断，直接修改提交菜单id集合的状态【客户端计算菜单id集合比较麻烦】
+ * 2.客户端提交菜单id【一个】，服务器端判断是否为主菜单，如果是，再把旗下的所有子菜单全部禁用【服务器端需要查一次数据库，判断当前菜单是否数据主菜单】
+ *
+ *  个人选择第二种解决方案
  * @author laoguo
  */
 class MenuController extends BaseController
@@ -14,6 +19,9 @@ class MenuController extends BaseController
     protected $_bind_model = 'Menu';
     protected $title = '菜单管理';
 
+    /**
+     * 菜单管理首页
+     */
     public function index()
     {
         $menu_service = new MenuService();
@@ -31,14 +39,14 @@ class MenuController extends BaseController
     public function form()
     {
         if (IS_POST) {
-            $user = D("Index");
-            if (!$user->create()) {
-                $this->error($user->getError());
+            $menu = D("Menu");
+            if (!$menu->create()) {
+                $this->error($menu->getError());
             } else {
                 $post = I('post.');
                 $form_token = $post['form_token'];
                 if (!validate_form_token($form_token)) {
-                    $this->error('非法提交！');
+                    $this->error('当前提交已过期，请刷新后再试！');
                 } else {
                     //token验证通过后注销token
                     form_token(false);
@@ -51,7 +59,9 @@ class MenuController extends BaseController
                     $result = $menu_service->insert($post);
                 } else {
                     //edit
-                    $result = $menu_service->update($post);
+                    $map = [];
+                    $map['id'] = $post['id'];
+                    $result = $menu_service->update($map, $post);
                 }
 
                 $result === false ? $this->error('操作失败！') : $this->success('操作成功！');
@@ -67,7 +77,7 @@ class MenuController extends BaseController
                 $this->assign('vo', $vo);
             }
             $this->assign('title', $title);
-            $this->assign('form_token', form_token(true, C('FORM_TYPE.REGISTER')));
+            $this->assign('form_token', form_token(true, C('FORM_TYPE.INFO')));
             $this->display();
         }
     }
@@ -78,9 +88,8 @@ class MenuController extends BaseController
     public function load_menu()
     {
         $menu_service = new MenuService();
-        $active_menu = $menu_service->get_active_menu("id,name,parent_id,sort");
-        $menu = $menu_service->get_tree_menu($active_menu);
-        $this->ajaxReturn(array_values($menu), 'JSON');
+        $active_menu = $menu_service->get_active_parent_menu("id,name,parent_id");
+        $this->ajaxReturn(array_values($active_menu), 'JSON');
     }
 
     /**
@@ -88,9 +97,24 @@ class MenuController extends BaseController
      * 如果启用的是主菜单，则把该菜单下的所有二级菜单全部启用
      * @param $id       菜单id
      */
-    protected function _resume_filter($id)
+    protected function _resume_filter($id = 0)
     {
+        //获取菜单信息
+        $menu_service = new MenuService();
+        $menu_detail = $menu_service->get_detail_menu($id);
+        //如果该菜单是属于主菜单，则把该菜单下的所有子菜单禁用
+        if (intval($menu_detail['parent_id']) === 0) {
+            $map = $params = [];
+            $map['parent_id'] = $id;
+            $params['status'] = 1;
+            $update_result = $menu_service->update($map, $params);
 
+            if ($update_result !== false) {
+                $this->success('操作成功！');
+            } else {
+                $this->error('操作失败！');
+            }
+        }
     }
 
     /**
@@ -98,8 +122,23 @@ class MenuController extends BaseController
      * 如果禁用的是主菜单，则把该菜单下的所有二级菜单全部禁用
      * @param $id       菜单id
      */
-    protected function _forbid_filter($id)
+    protected function _forbid_filter($id = 0)
     {
+        //获取菜单信息
+        $menu_service = new MenuService();
+        $menu_detail = $menu_service->get_detail_menu($id);
+        //如果该菜单是属于主菜单，则把该菜单下的所有子菜单禁用
+        if (intval($menu_detail['parent_id']) === 0) {
+            $map = $params = [];
+            $map['parent_id'] = $id;
+            $params['status'] = 0;
+            $update_result = $menu_service->update($map, $params);
 
+            if ($update_result !== false) {
+                $this->success('操作成功！');
+            } else {
+                $this->error('操作失败！');
+            }
+        }
     }
 }

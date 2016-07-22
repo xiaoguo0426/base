@@ -1,0 +1,48 @@
+<extend name="Admin@Public:form"/>
+<block name="form">
+
+    <div class="form-group"><label class="col-lg-2 control-label">角色名</label>
+        <div class="col-lg-10">
+            <input type="text" name="role_name" class="form-control" value="{$vo.role_name}" placeholder="角色名"
+                   autofocus="true" required="">
+        </div>
+    </div>
+
+    <div class="form-group"><label class="col-lg-2 control-label">权限</label>
+        <div class="col-lg-10">
+            <input type="text" name="auth" class="form-control" value="{$vo.auth}" placeholder="权限"
+                   autofocus="true" required="">
+        </div>
+    </div>
+
+    <input type="hidden" name="id" value="{$vo.id|default=0}"/>
+    <input name="form_token" type="hidden" value="{$form_token}"/>
+</block>
+<block name="script">
+    <script>
+        $(function () {
+            load_menu();
+        });
+        //加载菜单
+        function load_menu() {
+            $.ajax({
+                type: 'GET',
+                url: "{:U('load_menu')}",
+                success: function (res) {
+                    if (res.length !== 0) {
+                        var options = "", selected = "", parent_menu = '{$vo.parent_id}';
+                        res.forEach(function (item) {
+                            if (parent_menu == item.id) {
+                                selected = "selected";
+                            } else {
+                                selected = "";
+                            }
+                            options += "<option value='" + item.id + "' " + selected + ">" + item.name + "</option>";
+                        });
+                        $("select[name='parent_id']").append(options);
+                    }
+                }
+            });
+        }
+    </script>
+</block>

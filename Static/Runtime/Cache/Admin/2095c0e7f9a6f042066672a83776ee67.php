@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
@@ -7,41 +7,108 @@
     <meta name="author" content="gyt7574449@gmail.com">
     <meta http-equiv="Content-Language" content="zh-cn"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="__RES__/img/ico16x16.ico"/>
-    <title>{$title}</title>
+    <link rel="shortcut icon" href="http://localhost/base/Static/Resource/img/ico16x16.ico"/>
+    <title><?php echo ($title); ?></title>
 
-    <link href="__RES__/css/bootstrap.min.css" rel="stylesheet">
-    <link href="__RES__/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="http://localhost/base/Static/Resource/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://localhost/base/Static/Resource/font-awesome/css/font-awesome.css" rel="stylesheet">
 
-    <link href="__RES__/css/animate.css" rel="stylesheet">
-    <link href="__RES__/css/style.css" rel="stylesheet">
-    <link href="__RES__/plugins/layer/skin/layer.css" rel="stylesheet">
+    <link href="http://localhost/base/Static/Resource/css/animate.css" rel="stylesheet">
+    <link href="http://localhost/base/Static/Resource/css/style.css" rel="stylesheet">
+    <link href="http://localhost/base/Static/Resource/plugins/layer/skin/layer.css" rel="stylesheet">
 
 </head>
-<block name="body">
+
     <body>
     <div id="wrapper">
-        <include file="Public/menu"/>
+        <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+					<span>
+						<img alt="image" class="img-circle" src="http://localhost/base/Static/Resource/img/profile_small.jpg"/>
+					</span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+						<span class="clear"> 
+							<span class="block m-t-xs"> 
+								<strong class="font-bold">David Williams</strong>
+							</span>
+						</span>
+                    </a>
+                </div>
+                <div class="logo-element">
+                    IN+
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</nav>
         <div id="page-wrapper" class="gray-bg dashbard-1">
-            <include file="Public/header"/>
+            <div class="row border-bottom">
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li>
+                <a href="javascript:void(0);" data-logout>
+                    <i class="fa fa-sign-out"></i> Logout
+                </a>
+            </li>
+            <li>
+                <a class="right-sidebar-toggle">
+                    <i class="fa fa-tasks"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
             <div class="row">
                 <div class="col-lg-12">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <h4 class='pull-left'>{$title}</h4>
+                            <h4 class='pull-left'><?php echo ($title); ?></h4>
                             <div class="ibox-tools">
-                                <block name='tools'></block>
+                                
+    <button type="button" class="btn btn-sm btn-primary" data-modal="<?php echo U('Admin/Role/form');?>">添加菜单</button>
+
                             </div>
                         </div>
                         <div class="ibox-content">
-                            <block name="content">
+                            
                                 <div class="table-responsive">
                                     <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline">
-                                        <block name="search"></block>
+                                        
                                         <table class="table table-striped table-bordered table-hover dataTables-example dataTable dtr-inline"
                                                id="DataTables_Table_0" role="grid"
                                                aria-describedby="DataTables_Table_0_info">
-                                            <block name="table"></block>
+                                            
+    <thead>
+    <tr>
+        <th>排序</th>
+        <th>角色名</th>
+        <th>权限</th>
+        <th>创建日期</th>
+        <th>修改日期</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php if(is_array($list)): $k = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
+            <td><?php echo ($k); ?></td>
+            <td><?php echo ($vo["role_name"]); ?></td>
+            <td>
+
+            </td>
+            <td><?php echo ($vo["create_date"]); ?></td>
+            <td><?php echo ($vo["update_date"]); ?></td>
+            <td><?php echo show_toggle_button($vo['status'],$vo); echo show_edit_button($vo['id']);?></td>
+        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+    </tbody>
+
                                         </table>
                                         <!--												<div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
                                                                                                                                         <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
@@ -58,7 +125,7 @@
                                                                                                                                         </div>-->
                                     </div>
                                 </div>
-                            </block>
+                            
                         </div>
                     </div>
                 </div>
@@ -66,17 +133,17 @@
         </div>
     </div>
     </body>
-</block>
-<script src="__RES__/js/jquery-1.11.3.min.js"></script>
+
+<script src="http://localhost/base/Static/Resource/js/jquery-1.11.3.min.js"></script>
 <script>
-    window._APP_ = '__APP__';
-    window._RES_ = '__RES__';
-    window._SELF_ = '__SELF__';
+    window._APP_ = '/base';
+    window._RES_ = 'http://localhost/base/Static/Resource';
+    window._SELF_ = '/base/Admin/Role/index.shtml';
     load_menu();
     function load_menu() {
         $.ajax({
             type: 'GET',
-            url: "{:U('Admin/Index/get_tree_menu')}",
+            url: "<?php echo U('Admin/Index/get_tree_menu');?>",
             async: false,
             success: function (res) {
                 if (typeof res === 'string') {
@@ -88,22 +155,22 @@
 </script>
 
 <!-- Mainly scripts -->
-<script src="__RES__/plugins/layer/layer.js"></script>
-<script src="__RES__/plugins/validate/jquery.validate.js"></script>
-<script src="__RES__/plugins/validate/dist/messages_zh.min.js"></script>
-<script src="__RES__/plugins/validate/validate.extend.js"></script>
-<script src="__RES__/js/common.js"></script>
-<script src="__RES__/js/bootstrap.min.js"></script>
-<script src="__RES__/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-<script src="__RES__/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="http://localhost/base/Static/Resource/plugins/layer/layer.js"></script>
+<script src="http://localhost/base/Static/Resource/plugins/validate/jquery.validate.js"></script>
+<script src="http://localhost/base/Static/Resource/plugins/validate/dist/messages_zh.min.js"></script>
+<script src="http://localhost/base/Static/Resource/plugins/validate/validate.extend.js"></script>
+<script src="http://localhost/base/Static/Resource/js/common.js"></script>
+<script src="http://localhost/base/Static/Resource/js/bootstrap.min.js"></script>
+<script src="http://localhost/base/Static/Resource/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="http://localhost/base/Static/Resource/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
 <!-- jQuery UI -->
-<!--<script src="__RES__/js/plugins/jquery-ui/jquery-ui.min.js"></script>-->
+<!--<script src="http://localhost/base/Static/Resource/js/plugins/jquery-ui/jquery-ui.min.js"></script>-->
 
 <!-- Custom and plugin javascript -->
-<script src="__RES__/js/inspinia.js"></script>
-<script src="__RES__/js/plugins/pace/pace.min.js"></script>
+<script src="http://localhost/base/Static/Resource/js/inspinia.js"></script>
+<script src="http://localhost/base/Static/Resource/js/plugins/pace/pace.min.js"></script>
 
-<block name="style"></block>
-<block name="script"></block>
+
+
 </html>

@@ -48,18 +48,23 @@
             <input type="text" name="sort" value="<?php echo ($vo["sort"]); ?>" class="form-control" required="">
         </div>
     </div>
-    <div class="form-group"><label class="col-lg-2 control-label">状态</label>
-        <div class="col-lg-10">
-            <div class="radio radio-info radio-inline">
-                <input type="radio" value="1" name="status" checked="">
-                启用
-            </div>
-            <div class="radio radio-info radio-inline">
-                <input type="radio" value="0" name="status">
-                禁用
-            </div>
-        </div>
-    </div>
+    <!-- 表单的状态改变不要在这里做。控制器内没有对是否为主菜单校验 -->
+    <!--<div class="form-group"><label class="col-lg-2 control-label">状态</label>-->
+        <!--<div class="col-lg-10">-->
+            <!--<div class="radio radio-info radio-inline">-->
+                <!--<input type="radio" value="1" name="status"-->
+                <!--<?php if(($vo["status"]) != "0"): ?>checked=""<?php endif; ?>-->
+                <!--&gt;-->
+                <!--启用-->
+            <!--</div>-->
+            <!--<div class="radio radio-info radio-inline">-->
+                <!--<input type="radio" value="0" name="status"-->
+                <!--<?php if(($vo["status"]) == "0"): ?>checked=""<?php endif; ?>-->
+                <!--&gt;-->
+                <!--禁用-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
     <input type="hidden" name="id" value="<?php echo ((isset($vo["id"]) && ($vo["id"] !== ""))?($vo["id"]):0); ?>"/>
     <input name="form_token" type="hidden" value="<?php echo ($form_token); ?>"/>
 
@@ -86,20 +91,16 @@
                 url: "<?php echo U('load_menu');?>",
                 success: function (res) {
                     if (res.length !== 0) {
-                        var options = [], result = [];
-                        res.forEach(function (item, index) {
-                            item.forEach(function (o, i) {
-                                if (parseInt(o.parent_id) !== 0) {
-                                    //二级菜单
-                                    options[o.parent_id].push("<option value='" + o.id + "'>&emsp;--" + o.name + "</option>");
-                                } else {
-                                    //一级菜单
-                                    options[o.id] = [];
-                                    options[o.id].push("<option value='" + o.id + "'>" + o.name + "</option>");
-                                }
-                            });
+                        var options = "", selected = "", parent_menu = '<?php echo ($vo["parent_id"]); ?>';
+                        res.forEach(function (item) {
+                            if (parent_menu == item.id) {
+                                selected = "selected";
+                            } else {
+                                selected = "";
+                            }
+                            options += "<option value='" + item.id + "' " + selected + ">" + item.name + "</option>";
                         });
-                        $("select[name='parent_id']").append(options.join(""));
+                        $("select[name='parent_id']").append(options);
                     }
                 }
             });

@@ -25,8 +25,8 @@ class FormToken
      */
     public static function create_token($type = '', $user_id = 0)
     {
-        session('form_token', self::_crete_token($type = '', $user_id = 0), 1800);
-        return session('form_token');
+        session('user.form_token', self::_crete_token($type = '', $user_id = 0), 1800);
+        return session('user.form_token');
     }
 
     /**
@@ -34,7 +34,7 @@ class FormToken
      */
     public static function unset_token()
     {
-        session('form_token', null);
+        session('user.form_token', null);
         return true;
     }
 
@@ -57,12 +57,7 @@ class FormToken
      */
     public static function validate_token($token = '')
     {
-        if (empty($token) ||
-            !session('?form_token') ||
-            empty(session('form_token')) ||
-            !session('form_token') ||
-            session('form_token') !== $token
-        ) {
+        if (empty($token) || empty(session('user.form_token'))) {
             return false;
         } else {
             self::unset_token();

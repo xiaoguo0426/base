@@ -5,7 +5,7 @@ namespace Admin\Controller;
 use Think\Controller;
 use Admin\Service\IndexService;
 
-class IndexController extends Controller
+class IndexController extends BaseController
 {
 
     /**
@@ -36,7 +36,7 @@ class IndexController extends Controller
                 $form_token = I('post.form_token', '');
 
                 if (!validate_form_token($form_token)) {
-                    $this->error('非法提交！');
+                    $this->error('当前提交已过期，请刷新后再试！');
                 } else {
                     //token验证通过后注销token
                     form_token(false);
@@ -89,6 +89,9 @@ class IndexController extends Controller
         }
     }
 
+    /**
+     * 菜单
+     */
     public function get_tree_menu()
     {
         $menu_service = new \Admin\Service\MenuService();
@@ -98,7 +101,7 @@ class IndexController extends Controller
         $body = "";
         $html = "";
         foreach ($menu as $key => $value) {
-            $header = "<li><a href='#'><i class='".$value[0]['icon']."'></i><span class='nav-label'>" . $value[0]['name'] . "</span><span class='fa arrow'></span></a><ul class='nav nav-second-level collapse'>";
+            $header = "<li><a href='#'><i class='" . $value[0]['icon'] . "'></i><span class='nav-label'>" . $value[0]['name'] . "</span><span class='fa arrow'></span></a><ul class='nav nav-second-level collapse'>";
             $footer = "</ul></li>";
             unset($value[0]);
             foreach ($value as $k => $v) {

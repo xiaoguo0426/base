@@ -18,7 +18,7 @@ class BaseController extends Controller
     {
         //重写了构造方法，一定要调用父类的构造方法
         parent::__construct();
-        if (!is_login()) {
+        if (!is_login() && 'login' !== ACTION_NAME) {
             redirect(get_domain() . U('Admin/Index/login'));
         }
     }
@@ -36,13 +36,16 @@ class BaseController extends Controller
             $this->error('参数错误！');
         }
         //控制器名一定要和模型名一致
-        $class = "\\" . MODULE_NAME . "\\Model\\" . CONTROLLER_NAME . "Model";
-        $model = new $class();
+//        $class = "\\" . MODULE_NAME . "\\Model\\" . CONTROLLER_NAME . "Model";
+//        $model = new $class();
+
+        //子类需要指定绑定的模型
+        $model = D($this->_bind_model);
         $result = $model->resume(array('id' => $id));
         if ($result === false) {
             $this->error('操作失败！');
         } else {
-            $this->success('操作成功！');
+            (false !== $this->_callback_function(__FUNCTION__, $id)) && $this->success('操作成功！');
         }
     }
 

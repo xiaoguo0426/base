@@ -1,0 +1,30 @@
+<extend name="Public:index"/>
+<block name='tools'>
+    <button type="button" class="btn btn-sm btn-primary" data-modal="{:U('Admin/Role/form')}">添加菜单</button>
+</block>
+<block name="table">
+    <thead>
+    <tr>
+        <th>排序</th>
+        <th>角色名</th>
+        <th>权限</th>
+        <th>创建日期</th>
+        <th>修改日期</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <volist name="list" id="vo" key="k">
+        <tr>
+            <td>{$k}</td>
+            <td>{$vo.role_name}</td>
+            <td>
+
+            </td>
+            <td>{$vo.create_date}</td>
+            <td>{$vo.update_date}</td>
+            <td>{:show_toggle_button($vo['status'],$vo)}{:show_edit_button($vo['id'])}</td>
+        </tr>
+    </volist>
+    </tbody>
+</block>

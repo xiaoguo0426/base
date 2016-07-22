@@ -1,14 +1,7 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 namespace Admin\Service;
 
-use Admin\Model\IndexModel;
 use Admin\Model\MenuModel;
 
 /**
@@ -42,22 +35,44 @@ class MenuService
         return $this->model->insert($params);
     }
 
-    public function update(array $params)
+    /**
+     * 更新数据
+     * @param array $params
+     * @return bool
+     */
+    public function update(array $where, array $params)
     {
-        if (empty($params)) {
+        if (empty($params) || empty($where)) {
             return false;
         }
 
         $params['update_date'] = get_now_date();
         $params['update_by'] = get_user_id();
 
-        return $this->model->update($params['id'], $params);
+        return $this->model->update($where, $params);
     }
 
+    /**
+     * 获取所有的菜单
+     * @param string $fields
+     * @return mixed
+     */
     public function get_all_menu($fields = "*")
     {
         $order = "parent_id ASC,sort ASC";
         return $this->model->get_menu(array(), $fields, "", $order);
+    }
+
+    /**
+     * 获取启用状态的主菜单
+     * @param string $fields
+     * @return mixed
+     */
+    public function get_active_parent_menu($fields = "*")
+    {
+        $where = array('parent_id' => 0, 'status' => 1);
+        $order = "sort ASC";
+        return $this->model->get_menu($where, $fields, "", $order);
     }
 
     /**
@@ -110,6 +125,11 @@ class MenuService
         return $temp;
     }
 
+    /**
+     * 根据指定的id获取菜单信息
+     * @param $id
+     * @return mixed
+     */
     public function get_detail_menu($id)
     {
         $where = array("id" => $id);

@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Language" content="zh-cn"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="http://localhost/base/Static/Resource/img/ico16x16.ico"/>
-    <title></title>
+    <title><?php echo ($title); ?></title>
 
     <link href="http://localhost/base/Static/Resource/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://localhost/base/Static/Resource/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -73,7 +73,7 @@
                             <h4 class='pull-left'><?php echo ($title); ?></h4>
                             <div class="ibox-tools">
                                 
-    <button type="button" class="btn btn-sm btn-primary" data-modal="<?php echo U('Admin/Menu/form');?>">添加菜单</button>
+    <button type="button" class="btn btn-sm btn-primary" data-modal="<?php echo U('Admin/Menu/form');?>">添加角色</button>
 
                             </div>
                         </div>
@@ -101,7 +101,7 @@
             <td><?php echo ($k); ?></td>
             <td><?php echo is_parent_menu($vo['parent_id']); echo ($vo["name"]); ?></td>
             <td>
-                <button class="btn btn-success  dim" type="button" data-icon><i class="<?php echo ($vo["icon"]); ?>"></i></button>
+                <button class="btn btn-success  dim" type="button"><i class="<?php echo ($vo["icon"]); ?>"></i></button>
             </td>
             <td>
                 <?php echo ($vo["path"]); ?>
@@ -138,7 +138,7 @@
     </div>
     </body>
 
-<script src="http://localhost/base/Static/Resource/js/jquery-2.1.1.js"></script>
+<script src="http://localhost/base/Static/Resource/js/jquery-1.11.3.min.js"></script>
 <script>
     window._APP_ = '/base';
     window._RES_ = 'http://localhost/base/Static/Resource';

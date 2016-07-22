@@ -102,17 +102,17 @@
 
 $(function () {
     var param = {};
-    window._modal = "";
+    window.$_self = "", window._modal = "";
     $("body > *")
         .on('click', '[data-ajax]', function () {
-            var _self = $(this);
-            _self.validate({
+            $_self = $(this);
+            $_self.validate({
                 //验证通过后回掉函数
                 submitHandler: function () {
-                    param.url = _self.attr('action');
-                    param.data = _self.serializeArray();
-                    param.method = _self.attr('method');
-                    param.tips = _self.data('tips');
+                    param.url = $_self.attr('action');
+                    param.data = $_self.serializeArray();
+                    param.method = $_self.attr('method');
+                    param.tips = $_self.data('tips');
                     $.form.load(param);
                 }
             });
@@ -123,25 +123,28 @@ $(function () {
 
         confirm('确定要退出系统？') && $.form.load(param);
     }).on('click', '[data-modal]', function () {
-        var _self = $(this);
+        $_self = $(this);
         //同步加载模态框
-        param.data = {"id": _self.data('id') || ""};
-        param.url = _self.data('modal');
+        param.data = {"id": $_self.data('id') || ""};
+        param.url = $_self.data('modal');
         $.form.load(param);
     }).on('click', '[data-resume]', function () {
-        var _self = $(this);
-        param.url = _self.data('resume');
-        param.data = {"id": _self.data('id') || ""};
+        $_self = $(this);
+        param.url = $_self.data('resume');
+        param.data = {"id": $_self.data('id') || ""};
         param.method = "POST";
         $.form.load(param);
     }).on('click', '[data-forbid]', function () {
-        var _self = $(this);
-        param.url = _self.data('forbid');
-        param.data = {"id": _self.data('id') || ""};
+        $_self = $(this);
+        param.url = $_self.data('forbid');
+        param.data = {"id": $_self.data('id') || ""};
         param.method = "POST";
         $.form.load(param);
     });
 
+    $("body > img").error(function () {
+        $(this).attr('src', _RES_ + '/img/add.png');
+    });
 });
 
 

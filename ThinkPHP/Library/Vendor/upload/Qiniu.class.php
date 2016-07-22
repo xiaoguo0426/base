@@ -9,39 +9,41 @@ use Qiniu\Auth;
 // 引入上传类
 use Qiniu\Storage\UploadManager;
 
-class Qiniu {
+class Qiniu
+{
 
-	private $accessKey = '';
-	private $secretKey = '';
-	private $bucket = '';
-	private $auth = '';
-	private $token = '';
-	private $uploadManager = '';
-	private $policy = [];
+    private $accessKey = '';
+    private $secretKey = '';
+    private $bucket = '';
+    private $auth = '';
+    private $token = '';
+    private $uploadManager = '';
+    private $policy = [];
+    private $config = [];
 
-	public function __construct() {
-		require 'config.php';
+    public function __construct()
+    {
+        
+        $this->config = load_config(__DIR__ . '/config.php');
 
-		$this->accessKey = $config['accessKey'];
-		$this->secretKey = $config['secretKey'];
-		$this->bucket = $config['bucket'];
-		$this->policy = $config['policy'];
+        $this->accessKey = $this->config['accessKey'];
+        $this->secretKey = $this->config['secretKey'];
+        $this->bucket = $this->config['bucket'];
+        $this->policy = $this->config['policy'];
+        $this->auth = new Auth($this->accessKey, $this->secretKey);
+        $this->token = $this->auth->uploadToken($this->bucket);
+        $this->uploadManager = new UploadManager();
+    }
 
-		$this->_init();
-	}
-
-	private function _init() {
-		$this->auth = new Auth($this->accessKey, $this->secretKey);
-		$this->token = $this->auth->uploadToken($this->bucket);
-		$this->uploadManager = new UploadManager();
-	}
-
-	public function uploadFile($filename = '') {
-		echo $filename;
-		echo "</br>";
-		echo $this->token;
-		return list($ret, $err) = $this->uploadManager->putFile($this->token, null, $filename);
-	}
+    public function uploadFile($filename = '')
+    {
+        list($ret, $err) = $this->uploadManager->putFile($this->token, get_now_date('YmdHis') . '.' . pathinfo($filename, PATHINFO_EXTENSION), $filename);
+        if ($err !== null) {
+            var_dump($err);
+        } else {
+            return $this->config['domain'] . '/' . $ret['key'];
+        }
+    }
 
 }
 

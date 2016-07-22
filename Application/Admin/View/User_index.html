@@ -1,14 +1,14 @@
 <extend name="Public:index"/>
 <block name='tools'>
-    <button type="button" class="btn btn-sm btn-primary" data-modal="{:U('Admin/Menu/form')}">添加角色</button>
+    <button type="button" class="btn btn-sm btn-primary" data-modal="{:U('Admin/User/form')}">添加用户</button>
 </block>
 <block name="table">
     <thead>
     <tr>
         <th>排序</th>
-        <th>菜单名</th>
-        <th>图标</th>
-        <th>链接</th>
+        <th>昵称</th>
+        <th>账号</th>
+        <th>角色</th>
         <th>状态</th>
         <th>操作</th>
     </tr>
@@ -17,14 +17,12 @@
     <volist name="list" id="vo" key="k">
         <tr>
             <td>{$k}</td>
-            <td>{:is_parent_menu($vo['parent_id'])}{$vo.name}</td>
+            <td>{$vo.nick_name}</td>
             <td>
-                <button class="btn btn-success  dim" type="button"><i class="{$vo.icon}"></i></button>
+                {$vo.name}
             </td>
             <td>
-                {$vo.path}
-                <button type="button" class="btn btn-sm btn-primary" data-modal="{:U('Plugins/Uploader/form')}">上传图片
-                </button>
+                {$vo.auth}
             </td>
             <td>{:show_button_status($vo['status'])}</td>
             <td>{:show_toggle_button($vo['status'],$vo)}{:show_edit_button($vo['id'])}</td>

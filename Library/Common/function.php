@@ -5,9 +5,9 @@ use Vendor\FormToken\FormToken;
  * 获得当前时间
  * @return type
  */
-function get_now_date()
+function get_now_date($format = 'Y-m-d H:i:s')
 {
-    return date('Y-m-d H:i:s');
+    return date($format);
 }
 
 function get_user_id()
@@ -36,7 +36,7 @@ function get_domain()
  */
 function is_login()
 {
-    if (!is_null(session('user'))) {
+    if (!empty(session('user'))) {
         return TRUE;
     } else {
         return FALSE;

@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Language" content="zh-cn"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="http://localhost/base/Static/Resource/img/ico16x16.ico"/>
-    <title></title>
+    <title><?php echo ($title); ?></title>
 
     <link href="http://localhost/base/Static/Resource/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://localhost/base/Static/Resource/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -30,11 +30,11 @@
               data-tips="正在登录..." onSubmit="return false;">
             <div class="form-group">
                 <input type="text" class="form-control" name='name' placeholder="Username" maxlength="20"
-                       pattern="/^\w+$/" required="">
+                       pattern="/^\w+$/" autocomplete="off" required="">
             </div>
             <div class="form-group">
                 <input type="password" class="form-control" name='password' placeholder="Password" maxlength="20"
-                       pattern="/^\w+$/" required="">
+                       pattern="/^\w+$/" autocomplete="off" required="">
             </div>
             <input name="form_token" type="hidden" value="<?php echo ($form_token); ?>"/>
             <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
@@ -49,7 +49,7 @@
     </div>
     </body>
 
-<script src="http://localhost/base/Static/Resource/js/jquery-2.1.1.js"></script>
+<script src="http://localhost/base/Static/Resource/js/jquery-1.11.3.min.js"></script>
 <script>
     window._APP_ = '/base';
     window._RES_ = 'http://localhost/base/Static/Resource';
