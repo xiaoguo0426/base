@@ -52,3 +52,21 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001495s ]
 ERR: 无法加载模块:Static
 
+[ 2016-07-22T23:01:06+08:00 ] ::1 /base/Static/Resource/css/plugins/images/sort_both.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+ERR: 无法加载模块:Static
+
+[ 2016-07-22T23:17:54+08:00 ] ::1 /base/Shop/Config/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+ERR: 无法加载模块:Shop
+
+[ 2016-07-22T23:17:55+08:00 ] ::1 /base/Shop/Config/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+ERR: 无法加载模块:Shop
+
