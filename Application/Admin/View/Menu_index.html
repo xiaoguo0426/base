@@ -21,10 +21,7 @@
             <td>
                 <button class="btn btn-success  dim" type="button"><i class="{$vo.icon}"></i></button>
             </td>
-            <td>
-                {$vo.path}
-                <button type="button" class="btn btn-sm btn-primary" data-modal="{:U('Plugins/Uploader/form')}">上传图片
-                </button>
+            <td>{$vo.path}</button>
             </td>
             <td>{:show_button_status($vo['status'])}</td>
             <td>{:show_toggle_button($vo['status'],$vo)}{:show_edit_button($vo['id'])}</td>

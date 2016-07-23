@@ -73,7 +73,7 @@
                             <h4 class='pull-left'><?php echo ($title); ?></h4>
                             <div class="ibox-tools">
                                 
-    <button type="button" class="btn btn-sm btn-primary" data-modal="<?php echo U('Admin/Menu/form');?>">添加角色</button>
+    <button type="button" class="btn btn-sm btn-primary" data-modal="<?php echo U('Shop/Specifications/form');?>">添加规格</button>
 
                             </div>
                         </div>
@@ -89,9 +89,8 @@
     <thead>
     <tr>
         <th>排序</th>
-        <th>菜单名</th>
-        <th>图标</th>
-        <th>链接</th>
+        <th>分类</th>
+        <th>规格名称</th>
         <th>状态</th>
         <th>操作</th>
     </tr>
@@ -99,12 +98,8 @@
     <tbody>
     <?php if(is_array($list)): $k = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
             <td><?php echo ($k); ?></td>
-            <td><?php echo is_parent_menu($vo['parent_id']); echo ($vo["name"]); ?></td>
-            <td>
-                <button class="btn btn-success  dim" type="button"><i class="<?php echo ($vo["icon"]); ?>"></i></button>
-            </td>
-            <td><?php echo ($vo["path"]); ?></button>
-            </td>
+            <td><?php echo ($vo["category_id"]); ?></td>
+            <td><?php echo ($vo["name"]); ?></td>
             <td><?php echo show_button_status($vo['status']);?></td>
             <td><?php echo show_toggle_button($vo['status'],$vo); echo show_edit_button($vo['id']);?></td>
         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -139,7 +134,7 @@
 <script>
     window._APP_ = '/base';
     window._RES_ = 'http://localhost/base/Static/Resource';
-    window._SELF_ = '/base/Admin/Menu/index.shtml';
+    window._SELF_ = '/base/Shop/Specifications/index.shtml';
     load_menu();
     function load_menu() {
         $.ajax({

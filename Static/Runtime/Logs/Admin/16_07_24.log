@@ -1,0 +1,518 @@
+[ 2016-07-24T00:05:56+08:00 ] ::1 /base/Admin/Menu/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001588s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `tp_system_menu` ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001568s ]
+
+[ 2016-07-24T00:05:57+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0008s ]
+
+[ 2016-07-24T00:05:57+08:00 ] ::1 /base/Admin/Menu/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002048s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+ERR: 非法操作:index.js.map
+
+[ 2016-07-24T00:06:01+08:00 ] ::1 /base/Admin/Menu/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001834s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Admin\12f070f0c216e4c03e7cf98df8513123.php 第 23 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Admin\12f070f0c216e4c03e7cf98df8513123.php 第 34 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Admin\12f070f0c216e4c03e7cf98df8513123.php 第 40 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Admin\12f070f0c216e4c03e7cf98df8513123.php 第 48 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Admin\12f070f0c216e4c03e7cf98df8513123.php 第 56 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Admin\12f070f0c216e4c03e7cf98df8513123.php 第 62 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Admin\12f070f0c216e4c03e7cf98df8513123.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001415s ]
+
+[ 2016-07-24T00:06:03+08:00 ] ::1 /base/Admin/Menu/load_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002026s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0097s ]
+SQL: SELECT `id`,`name`,`parent_id` FROM `tp_system_menu` WHERE `parent_id` = 0 AND `status` = 1 ORDER BY sort ASC  [ RunTime:0.0011s ]
+
+[ 2016-07-24T00:06:28+08:00 ] ::1 /base/Admin/Menu/icons.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000364s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000455s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2016-07-24T00:07:04+08:00 ] ::1 /base/Admin/Menu/form
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined index: validate E:\www\base\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\www\base\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0036s ]
+SQL: INSERT INTO `tp_system_menu` (`parent_id`,`name`,`path`,`icon`,`sort`,`update_date`,`create_date`,`update_by`,`create_by`) VALUES ('2','规格管理','Shop/Specifications/index','glyphicon glyphicon-list-alt','5','2016-07-24 00:07:04','2016-07-24 00:07:04','1','1') [ RunTime:0.0019s ]
+
+[ 2016-07-24T00:07:07+08:00 ] ::1 /base/Admin/Menu/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001240s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `tp_system_menu` ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018130s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2016-07-24T00:07:08+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0087s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:07:08+08:00 ] ::1 /base/Admin/Menu/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002179s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+ERR: 非法操作:index.js.map
+
+[ 2016-07-24T00:10:39+08:00 ] ::1 /base/Admin/Menu/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001689s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `tp_system_menu` ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001761s ]
+
+[ 2016-07-24T00:10:40+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0073s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:10:40+08:00 ] ::1 /base/Admin/Menu/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002229s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+ERR: 非法操作:index.js.map
+
+[ 2016-07-24T00:12:01+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0082s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:24:32+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0006s ]
+
+[ 2016-07-24T00:24:50+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0081s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0005s ]
+
+[ 2016-07-24T00:25:15+08:00 ] ::1 /base/Admin/Index/login.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined variable: title E:\www\base\Static\Runtime\Cache\Admin\d5522eb4003a93730c9650b70c94da35.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2016-07-24T00:25:15+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0005s ]
+
+[ 2016-07-24T00:25:15+08:00 ] ::1 /base/Admin/Index/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+ERR: 非法操作:index.js.map
+
+[ 2016-07-24T00:25:22+08:00 ] ::1 /base/Admin/Index/login.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_user` [ RunTime:0.0081s ]
+NOTIC: [8] Undefined index: validate E:\www\base\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\www\base\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `tp_system_user` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `tp_system_user` WHERE `name` = 'admin' AND `password` = '4297f44b13955235245b2497399d7a93' LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2016-07-24T00:25:25+08:00 ] ::1 /base/Admin/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined variable: title E:\www\base\Static\Runtime\Cache\Admin\1ea4cdfef72ad06cf7ba7da144f9f90e.php 第 11 行.
+NOTIC: [8] Undefined variable: title E:\www\base\Static\Runtime\Cache\Admin\1ea4cdfef72ad06cf7ba7da144f9f90e.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002352s ]
+
+[ 2016-07-24T00:25:26+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:25:26+08:00 ] ::1 /base/Admin/Index/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+ERR: 非法操作:index.js.map
+
+[ 2016-07-24T00:25:29+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0076s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:27:56+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0079s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:27:59+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:29:22+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0077s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:30:11+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0101s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:30:43+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0082s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:30:47+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:43:49+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0065s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:44:00+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0079s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:44:09+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0097s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:44:46+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0003s ]
+
+[ 2016-07-24T00:46:37+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0075s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0005s ]
+
+[ 2016-07-24T00:46:55+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0076s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:47:08+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0082s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:47:21+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0061s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0004s ]
+
+[ 2016-07-24T00:47:23+08:00 ] ::1 /base/Admin/Index/get_tree_menu.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001350s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_system_menu` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`name`,`parent_id`,`path`,`sort`,`icon` FROM `tp_system_menu` WHERE `status` = 1 ORDER BY parent_id ASC,sort ASC  [ RunTime:0.0007s ]
+

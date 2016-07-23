@@ -1,0 +1,55 @@
+<extend name="Admin@Public:form"/>
+<block name="form">
+
+    <div class="form-group"><label class="col-lg-2 control-label">分类名称</label>
+        <div class="col-lg-10">
+            <select class="form-control m-b" name="category_id">
+                <volist name="category" id="item">
+                    <option value="{$item.id}">{$item.name}</option>
+                </volist>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group"><label class="col-lg-2 control-label">规格名称</label>
+        <div class="col-lg-10">
+            <input type="text" name="name" value="{$vo.name}" placeholder="规格名称" class="form-control" autofocus="true"
+                   required=""/>
+        </div>
+    </div>
+
+    <div class="form-group"><label class="col-lg-2 control-label">规格</label>
+        <div class="col-lg-2 col-lg-offset-7">
+            <button type="button" class="btn btn-sm btn-primary" id="add-model" >添加规格</button>
+        </div>
+    </div>
+
+    <div class="form-group"><label class="col-lg-2 control-label">状态</label>
+        <div class="col-lg-10">
+            <div class="radio radio-info radio-inline">
+                <input type="radio" value="1" name="status"
+                <neq name="vo.status" value="0">checked=""</neq>
+                />
+                启用
+            </div>
+            <div class="radio radio-info radio-inline">
+                <input type="radio" value="0" name="status"
+                <eq name="vo.status" value="0">checked=""</eq>
+                />
+                禁用
+            </div>
+        </div>
+    </div>
+
+    <input type="hidden" name="id" value="{$vo.id|default=0}"/>
+    <input name="form_token" type="hidden" value="{$form_token}"/>
+</block>
+<block name="script">
+    <script>
+        $(function () {
+            $('button#add-model').on('click',function () {
+                alert('123');
+            });
+        });
+    </script>
+</block>

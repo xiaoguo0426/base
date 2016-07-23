@@ -2,7 +2,7 @@
     <div class="modal-dialog">
         <div class="modal-content animated fadeIn">
             
-                <form method="POST" action="/base/Shop/Delivery/form" class="form-horizontal" data-ajax="true"
+                <form method="POST" action="/base/Shop/Specifications/form" class="form-horizontal" data-ajax="true"
                       onSubmit="return false;">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
@@ -12,28 +12,24 @@
                     <div class="modal-body" style="">
                         
 
-    <div class="form-group"><label class="col-lg-2 control-label">快递</label>
+    <div class="form-group"><label class="col-lg-2 control-label">分类名称</label>
         <div class="col-lg-10">
-            <input type="text" name="name" value="<?php echo ($vo["name"]); ?>" placeholder="快递" class="form-control" autofocus="true"
+            <select class="form-control m-b" name="category_id">
+                <?php if(is_array($category)): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><option value="<?php echo ($item["id"]); ?>"><?php echo ($item["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group"><label class="col-lg-2 control-label">规格名称</label>
+        <div class="col-lg-10">
+            <input type="text" name="name" value="<?php echo ($vo["name"]); ?>" placeholder="规格名称" class="form-control" autofocus="true"
                    required=""/>
         </div>
     </div>
 
-    <div class="form-group"><label class="col-lg-2 control-label">价格</label>
-        <div class="col-lg-10">
-            <div class="input-group">
-                <span class="input-group-addon">&yen;</span>
-                <input type="text" name="price" value="<?php echo ($vo["price"]); ?>" placeholder="价格 格式【7.00】" class="form-control"
-                       pattern="/^[0-9]+(.[0-9]{2})?$/" title="请输入正确的价格" autofocus="true"
-                       required=""/>
-            </div>
-        </div>
-    </div>
-
-    <div class="form-group"><label class="col-lg-2 control-label">备注</label>
-        <div class="col-lg-10">
-            <input type="text" name="back_up" value="<?php echo ($vo["back_up"]); ?>" placeholder="备注" class="form-control"
-                   autofocus="true"/>
+    <div class="form-group"><label class="col-lg-2 control-label">规格</label>
+        <div class="col-lg-2 col-lg-offset-7">
+            <button type="button" class="btn btn-sm btn-primary" id="add-model" >添加规格</button>
         </div>
     </div>
 
@@ -69,4 +65,12 @@
     <!-- 这两个block一定要放到这里，不然模态框显示的时候，背景会有多重重影 -->
     
     
+    <script>
+        $(function () {
+            $('button#add-model').on('click',function () {
+                alert('123');
+            });
+        });
+    </script>
+
 </div>

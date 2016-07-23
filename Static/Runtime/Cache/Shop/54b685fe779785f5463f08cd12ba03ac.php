@@ -2,7 +2,7 @@
     <div class="modal-dialog">
         <div class="modal-content animated fadeIn">
             
-                <form method="POST" action="/base/Shop/Delivery/form" class="form-horizontal" data-ajax="true"
+                <form method="POST" action="/base/Shop/Category/form" class="form-horizontal" data-ajax="true"
                       onSubmit="return false;">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
@@ -12,43 +12,20 @@
                     <div class="modal-body" style="">
                         
 
-    <div class="form-group"><label class="col-lg-2 control-label">快递</label>
+    <div class="form-group"><label class="col-lg-2 control-label">分类名称</label>
         <div class="col-lg-10">
-            <input type="text" name="name" value="<?php echo ($vo["name"]); ?>" placeholder="快递" class="form-control" autofocus="true"
-                   required=""/>
-        </div>
-    </div>
-
-    <div class="form-group"><label class="col-lg-2 control-label">价格</label>
-        <div class="col-lg-10">
-            <div class="input-group">
-                <span class="input-group-addon">&yen;</span>
-                <input type="text" name="price" value="<?php echo ($vo["price"]); ?>" placeholder="价格 格式【7.00】" class="form-control"
-                       pattern="/^[0-9]+(.[0-9]{2})?$/" title="请输入正确的价格" autofocus="true"
-                       required=""/>
-            </div>
-        </div>
-    </div>
-
-    <div class="form-group"><label class="col-lg-2 control-label">备注</label>
-        <div class="col-lg-10">
-            <input type="text" name="back_up" value="<?php echo ($vo["back_up"]); ?>" placeholder="备注" class="form-control"
-                   autofocus="true"/>
+            <input type="text" name="name" value="<?php echo ($vo["name"]); ?>" placeholder="分类名称" class="form-control" autofocus="true" required="" />
         </div>
     </div>
 
     <div class="form-group"><label class="col-lg-2 control-label">状态</label>
         <div class="col-lg-10">
             <div class="radio radio-info radio-inline">
-                <input type="radio" value="1" name="status"
-                <?php if(($vo["status"]) != "0"): ?>checked=""<?php endif; ?>
-                />
+                <input type="radio" value="1" name="status" <?php if(($vo["status"]) != "0"): ?>checked=""<?php endif; ?> />
                 启用
             </div>
             <div class="radio radio-info radio-inline">
-                <input type="radio" value="0" name="status"
-                <?php if(($vo["status"]) == "0"): ?>checked=""<?php endif; ?>
-                />
+                <input type="radio" value="0" name="status" <?php if(($vo["status"]) == "0"): ?>checked=""<?php endif; ?> />
                 禁用
             </div>
         </div>
