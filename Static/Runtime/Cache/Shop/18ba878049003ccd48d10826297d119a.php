@@ -73,77 +73,57 @@
                             <h4 class='pull-left'><?php echo ($title); ?></h4>
                             <div class="ibox-tools">
                                 
+    <button type="button" class="btn btn-sm btn-primary" data-modal="<?php echo U('Shop/Delivery/form');?>">添加快递</button>
+
                             </div>
                         </div>
                         <div class="ibox-content">
                             
-    <form class="form-horizontal" method="POST" action="/base/Shop/Config/index" data-ajax="true" onSubmit="return false;">
-        <div class="form-group"><label class="col-sm-2 control-label">商城名称</label>
-            <div class="col-sm-10">
-                <input type="text" name="mall_name" class="form-control" value="<?php echo ($vo["mall_name"]); ?>" placeholder="商城名称"
-                       autofocus="true" required="">
-            </div>
-        </div>
-        <div class="hr-line-dashed"></div>
+                                <div class="table-responsive">
+                                    <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline">
+                                        
+                                        <table class="table table-striped table-bordered table-hover dataTables-example dataTable dtr-inline"
+                                               id="DataTables_Table_0" role="grid"
+                                               aria-describedby="DataTables_Table_0_info">
+                                            
+    <thead>
+    <tr>
+        <th>排序</th>
+        <th>快递</th>
+        <th>价格</th>
+        <th>备注</th>
+        <th>状态</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php if(is_array($list)): $k = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
+            <td><?php echo ($k); ?></td>
+            <td><?php echo ($vo["name"]); ?></td>
+            <td><?php echo ($vo["price"]); ?></td>
+            <td><?php echo ($vo["back_up"]); ?></td>
+            <td><?php echo show_button_status($vo['status']);?></td>
+            <td><?php echo show_toggle_button($vo['status'],$vo); echo show_edit_button($vo['id']);?></td>
+        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+    </tbody>
 
-        <div class="form-group"><label class="col-sm-2 control-label">公司名称</label>
-            <div class="col-sm-10">
-                <input type="text" name="company" class="form-control" value="<?php echo ($vo["company"]); ?>" placeholder="公司名称"
-                       autofocus="true" required="">
-            </div>
-        </div>
-        <div class="hr-line-dashed"></div>
-
-        <div class="form-group"><label class="col-sm-2 control-label">公司地址</label>
-            <div class="col-sm-10">
-                <input type="text" name="company_address" class="form-control" value="<?php echo ($vo["company_address"]); ?>"
-                       placeholder="公司地址"
-                       autofocus="true" required="">
-            </div>
-        </div>
-        <div class="hr-line-dashed"></div>
-
-        <div class="form-group"><label class="col-sm-2 control-label">联系方式</label>
-            <div class="col-sm-10">
-                <input type="text" name="phone" class="form-control" value="<?php echo ($vo["phone"]); ?>" placeholder="联系方式"
-                       autofocus="true" required="">
-            </div>
-        </div>
-        <div class="hr-line-dashed"></div>
-
-        <div class="form-group"><label class="col-sm-2 control-label">联系地址</label>
-            <div class="col-sm-10">
-                <input type="text" name="address" class="form-control" value="<?php echo ($vo["address"]); ?>" placeholder="联系地址"
-                       autofocus="true" required="">
-            </div>
-        </div>
-        <div class="hr-line-dashed"></div>
-
-        <div class="form-group"><label class="col-sm-2 control-label">微信支付配置</label>
-            <div class="col-sm-10">
-                <input type="text" name="wechat_pay" class="form-control" value="<?php echo ($vo["wechat_pay"]); ?>" placeholder="微信支付配置"
-                       autofocus="true" required="">
-            </div>
-        </div>
-        <div class="hr-line-dashed"></div>
-
-        <div class="form-group"><label class="col-sm-2 control-label">支付宝支付配置</label>
-            <div class="col-sm-10">
-                <input type="text" name="ali_pay" class="form-control" value="<?php echo ($vo["ali_pay"]); ?>" placeholder="支付宝支付配置"
-                       autofocus="true" required="">
-            </div>
-        </div>
-        <div class="hr-line-dashed"></div>
-
-        <input type="hidden" name="id" value="<?php echo ((isset($vo["id"]) && ($vo["id"] !== ""))?($vo["id"]):0); ?>"/>
-        <input name="form_token" type="hidden" value="<?php echo ($form_token); ?>"/>
-        <div class="form-group">
-            <div class="col-sm-4 col-sm-offset-6">
-                <button class="btn btn-primary" type="submit">保&nbsp;存</button>
-            </div>
-        </div>
-    </form>
-
+                                        </table>
+                                        <!--												<div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
+                                                                                                                                        <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                                                                                                                                                <ul class="pagination">
+                                                                                                                                                        <li class="paginate_button previous disabled" aria-controls="DataTables_Table_0" tabindex="0" id="DataTables_Table_0_previous"><a href="#">Previous</a></li>
+                                                                                                                                                        <li class="paginate_button active" aria-controls="DataTables_Table_0" tabindex="0"><a href="#">1</a></li>
+                                                                                                                                                        <li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">2</a></li>
+                                                                                                                                                        <li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">3</a></li>
+                                                                                                                                                        <li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">4</a></li>
+                                                                                                                                                        <li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">5</a></li>
+                                                                                                                                                        <li class="paginate_button " aria-controls="DataTables_Table_0" tabindex="0"><a href="#">6</a></li>
+                                                                                                                                                        <li class="paginate_button next" aria-controls="DataTables_Table_0" tabindex="0" id="DataTables_Table_0_next"><a href="#">Next</a></li>
+                                                                                                                                                </ul>
+                                                                                                                                        </div>-->
+                                    </div>
+                                </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -156,7 +136,7 @@
 <script>
     window._APP_ = '/base';
     window._RES_ = 'http://localhost/base/Static/Resource';
-    window._SELF_ = '/base/Shop/Config/index.shtml';
+    window._SELF_ = '/base/Shop/Delivery/index.shtml';
     load_menu();
     function load_menu() {
         $.ajax({

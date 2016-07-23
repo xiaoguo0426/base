@@ -59,6 +59,8 @@
         </div>
         <div class="hr-line-dashed"></div>
 
+        <input type="hidden" name="id" value="{$vo.id|default=0}"/>
+        <input name="form_token" type="hidden" value="{$form_token}"/>
         <div class="form-group">
             <div class="col-sm-4 col-sm-offset-6">
                 <button class="btn btn-primary" type="submit">保&nbsp;存</button>
