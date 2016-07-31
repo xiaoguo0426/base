@@ -70,7 +70,12 @@ class BaseModel extends Model
      */
     public function forbid($where)
     {
-        return $this->where($where)->save(array("status" => 0));
+        $params = array(
+            'status' => 0,
+            'update_date' => get_now_date(),
+            'update_by' => get_user_id()
+        );
+        return $this->where($where)->save($params);
     }
 
     /**
@@ -80,7 +85,12 @@ class BaseModel extends Model
      */
     public function resume($where)
     {
-        return $this->where($where)->save(array('status' => 1));
+        $params = array(
+            'status' => 1,
+            'update_date' => get_now_date(),
+            'update_by' => get_user_id()
+        );
+        return $this->where($where)->save($params);
     }
 
 }

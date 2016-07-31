@@ -1,0 +1,26 @@
+<extend name="Admin@Public:index"/>
+<block name='tools'>
+    <button type="button" class="btn btn-sm btn-primary" data-modal="{:U('Shop/Products/form')}">添加商品</button>
+</block>
+<block name="table">
+    <thead>
+    <tr>
+        <th>排序</th>
+        <th>分类</th>
+        <th>规格名称</th>
+        <th>状态</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <volist name="list" id="vo" key="k">
+        <tr>
+            <td>{$k}</td>
+            <td>{$vo.category_id}</td>
+            <td>{$vo.name}</td>
+            <td>{:show_button_status($vo['status'])}</td>
+            <td>{:show_toggle_button($vo['status'],$vo)}{:show_edit_button($vo['id'])}</td>
+        </tr>
+    </volist>
+    </tbody>
+</block>

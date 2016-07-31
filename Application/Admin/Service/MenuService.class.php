@@ -70,9 +70,13 @@ class MenuService
      */
     public function get_active_parent_menu($fields = "*")
     {
-        $where = array('parent_id' => 0, 'status' => 1);
-        $order = "sort ASC";
-        return $this->model->get_menu($where, $fields, "", $order);
+//        $where = array('parent_id' => 0, 'status' => 1);
+//        $order = "sort ASC";
+//        return $this->model->get_menu($where, $fields, "", $order);
+
+        $where = array('status' => 1);
+        $order_by = "parent_id ASC,sort ASC";
+        return $this->model->get_menu($where, $fields, "", $order_by);
     }
 
     /**
@@ -105,6 +109,62 @@ class MenuService
             }
         }
         return $temp;
+    }
+
+    /**
+     * 生成数组树
+     * @param $items
+     * @param string $id
+     * @param string $pid
+     * @param string $son
+     * @return array
+     */
+    public function getArrayTree($items, $id = 'id', $pid = 'parent_id', $son = 'sub')
+    {
+        $tree = array(); //格式化的树
+        $tmpMap = array();  //临时扁平数据
+
+        foreach ($items as $item) {
+            $tmpMap[$item[$id]] = $item;
+        }
+
+        foreach ($items as $item) {
+            if (isset($tmpMap[$item[$pid]])) {
+                $tmpMap[$item[$pid]][$son][] = &$tmpMap[$item[$id]];
+            } else {
+                $tree[] = &$tmpMap[$item[$id]];
+            }
+        }
+        return $tree;
+    }
+
+    /**
+     * 一维数据数组生成数据树
+     * @param type $list 数据列表
+     * @param type $id ID Key
+     * @param type $pid 父ID Key
+     * @param type $path
+     * @return type
+     */
+    static public function getSelectTree($list, $id = 'id', $pid = 'parent_id', $path = 'level', $ppath = '') {
+        $_array_tree = self::getArrayTree($list);
+        $tree = array(); //格式化的树
+        foreach ($_array_tree as $_tree) {
+            $_tree[$path] = $ppath . '-' . $_tree['id'];
+            $count = substr_count($ppath, '-');
+            $_tree['spl'] = str_repeat("&nbsp;&nbsp;&nbsp;├ ", $count);
+            if (!isset($_tree['sub'])) {
+                $_tree['sub'] = array();
+            }
+            $sub = $_tree['sub'];
+            unset($_tree['sub']);
+            $tree[] = $_tree;
+            if (!empty($sub)) :
+                $sub_array = self::getSelectTree($sub, $id, $pid, $path, $_tree[$path]);
+                $tree = array_merge($tree, (Array) $sub_array);
+            endif;
+        }
+        return $tree;
     }
 
     /**

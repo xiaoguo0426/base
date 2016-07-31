@@ -7,15 +7,15 @@ namespace Shop\Service;
  * Date: 2016/7/23
  * Time: 20:07
  */
-use Shop\Model\SpecificationsModel;
+use Shop\Model\ProductsModel;
 
-class SpecificationsService
+class ProductsService
 {
     private $model = '';
 
     public function __construct()
     {
-        $this->model = new SpecificationsModel();
+        $this->model = new ProductsModel();
     }
 
     /**
@@ -25,7 +25,7 @@ class SpecificationsService
      */
     public function get_all_list($fields = "*")
     {
-        $order = "status DESC,id DESC";//启用的排在前面
+        $order = "status DESC";//启用的排在前面
         return $this->model->select_base(array(), $fields, "", $order);
     }
 
@@ -45,28 +45,13 @@ class SpecificationsService
      * @param string $id
      * @return bool|mixed
      */
-    public function get_detail_list($id = '', $field = "*")
+    public function get_detail_list($id = '')
     {
         if (empty($id)) {
             return false;
         }
         $where = array('id' => $id);
-        return $this->model->find_base($where, $field);
-    }
-
-    /**
-     * 根据category_id获得list详情
-     * @param string $category_id
-     * @param string $field
-     * @return bool|mixed
-     */
-    public function get_specifications($category_id = '', $field = "*")
-    {
-        if (empty($category_id)) {
-            return false;
-        }
-        $where = array('category_id' => $category_id);
-        return $this->model->select_base($where, $field);
+        return $this->model->find_base($where);
     }
 
     /**

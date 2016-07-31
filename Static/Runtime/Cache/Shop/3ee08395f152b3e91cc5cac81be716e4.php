@@ -15,7 +15,9 @@
     <div class="form-group"><label class="col-lg-2 control-label">分类名称</label>
         <div class="col-lg-10">
             <select class="form-control m-b" name="category_id">
-                <?php if(is_array($category)): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><option value="<?php echo ($item["id"]); ?>"><?php echo ($item["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                <?php if(is_array($category)): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><option value="<?php echo ($item["id"]); ?>"
+                    <?php if(($item["id"]) == $vo['category_id']): ?>selected<?php endif; ?>
+                    ><?php echo ($item["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
         </div>
     </div>
@@ -28,9 +30,10 @@
     </div>
 
     <div class="form-group"><label class="col-lg-2 control-label">规格</label>
-        <div class="col-lg-2 col-lg-offset-7">
-            <button type="button" class="btn btn-sm btn-primary" id="add-model" >添加规格</button>
+        <div class="col-lg-2 col-lg-offset-8">
+            <button type="button" class="btn btn-sm btn-primary" id="add-model">添加规格</button>
         </div>
+        <span class="help-block m-b-none text-info col-lg-offset-2">参数名，如：尺码，颜色，版本等；参数值以英文逗号分割</span>
     </div>
 
     <div class="form-group"><label class="col-lg-2 control-label">状态</label>
@@ -66,11 +69,41 @@
     
     
     <script>
+        var count = 0;
+        var $_last_form_group = $('div.form-group:last');
+        var $_button_add_model = $('button#add-model');
         $(function () {
-            $('button#add-model').on('click',function () {
-                alert('123');
+            _init();
+
+            $_button_add_model.on('click', function (e, key, value) {
+                add_param(key || '', value || '');
             });
+
         });
+
+        function _init() {
+            var params = jQuery.parseJSON('<?php echo ($vo["params"]); ?>' || '{}');
+            if (params.length !== 0) {
+                var item;
+                for (item in params) {
+                    $_button_add_model.trigger("click", [item, params[item]]);
+                }
+            }
+        }
+
+        function del(obj) {
+            var _self = $(obj);
+            _self.parents('div.form-group').remove();
+            count--;
+        }
+        function add_param(key, value) {
+            if (count > 10) {
+                layer.msg('规格个数不能大于10个！', {icon: 2});
+                return false;
+            }
+            $_last_form_group.before('<div class="form-group"><div class="row"><div class="col-md-2 col-md-offset-1" style="padding-right: 0px;"><input type="text" name="params_name[]" placeholder="参数名" class="form-control" value="' + key + '" required=""></div><div class="col-md-7" style="padding-left: 0px;padding-right: 0px;"><input type="text" name="params_value[]" placeholder="参数值" class="form-control" value="' + value + '" required=""></div><div class="col-md-1" style="padding-left: 0px;"><button type="button" class="btn btn-danger" onclick="del(this);">删除</button></div></div></div>');
+            count++;
+        }
     </script>
 
 </div>

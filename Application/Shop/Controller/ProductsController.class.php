@@ -9,24 +9,25 @@
 namespace Shop\Controller;
 
 use Admin\Controller\BaseController;
+use Shop\Service\ProductsService;
 use Shop\Service\CategoryService;
 use Shop\Service\SpecificationsService;
 
-class SpecificationsController extends BaseController
+class ProductsController extends BaseController
 {
-    private $specifications_service = '';
-    protected $_bind_model = 'Specifications';
-    protected $title = '规格管理';
+    private $products_service = '';
+    protected $_bind_model = 'Products';
+    protected $title = '商品管理';
 
     public function __construct()
     {
         parent::__construct();
-        $this->specifications_service = new SpecificationsService();
+        $this->products_service = new ProductsService();
     }
 
     public function index()
     {
-        $list = $this->specifications_service->get_all_list();
+        $list = $this->products_service->get_all_list();
         $this->assign('list', $list);
         $this->assign('title', $this->title);
         $this->display();
@@ -35,7 +36,7 @@ class SpecificationsController extends BaseController
     public function form()
     {
         if (IS_POST) {
-            $config = D("Specifications");
+            $config = D("Products");
             if (!$config->create()) {
                 $this->error($config->getError());
             } else {
@@ -50,7 +51,7 @@ class SpecificationsController extends BaseController
                     unset($post['form_token']);
                 }
                 //拼装规格参数
-                $params = $this->specifications_service->get_combine_params($post['params_name'], $post['params_value']);
+                $params = $this->products_service->get_combine_params($post['params_name'], $post['params_value']);
                 $post['params'] = json_encode($params);
                 unset($post['params_name']);
                 unset($post['params_value']);
@@ -58,22 +59,22 @@ class SpecificationsController extends BaseController
                 if (empty($post['id'])) {
                     //add
                     unset($post['id']);
-                    $result = $this->specifications_service->insert($post);
+                    $result = $this->products_service->insert($post);
                 } else {
                     //edit
                     $map = [];
                     $map['id'] = $post['id'];
-                    $result = $this->specifications_service->update($map, $post);
+                    $result = $this->products_service->update($map, $post);
                 }
                 $result === false ? $this->error('操作失败！') : $this->success('操作成功！');
             }
         } else {
             $id = I('get.id');
             if (empty($id)) {
-                $title = '规格添加';
+                $title = '商品添加';
             } else {
-                $title = '规格编辑';
-                $vo = $this->specifications_service->get_detail_list($id);
+                $title = '商品编辑';
+                $vo = $this->products_service->get_detail_list($id);
 //                $vo['params'] = json_decode($vo['params'], true);
 
                 $this->assign('vo', $vo);
@@ -87,6 +88,21 @@ class SpecificationsController extends BaseController
             $this->assign('form_token', form_token(true, C('FORM_TYPE.INFO')));
             $this->display();
         }
+    }
+
+    /**
+     * 根据产品分类id获得该分类下的所有规格
+     */
+    public function getSpecifications()
+    {
+        $category_id = I('post.category_id');
+        if (empty($category_id)) {
+            $this->error('分类id不能为空！');
+        }
+        $specifications_service = new SpecificationsService();
+        $specifications = $specifications_service->get_specifications($category_id, "id,name");
+
+        $this->ajaxReturn($specifications, 'JSON');
     }
 
 }

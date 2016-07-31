@@ -24,10 +24,16 @@ class MenuController extends BaseController
      */
     public function index()
     {
-        $menu_service = new MenuService();
-        $menu = $menu_service->get_all_menu("*");
-        $list = $menu_service->get_list_menu(array_values($menu_service->get_tree_menu($menu)), null);
 
+
+        if (S('system_menu') !== false) {
+            $list = S('system_menu');
+        } else {
+            $menu_service = new MenuService();
+            $menu = $menu_service->get_all_menu("*");
+            $list = $menu_service->getSelectTree($menu);
+            S('system_menu', $list);
+        }
         $this->assign('list', $list);
         $this->assign('title', $this->title);
         $this->display();
@@ -63,8 +69,14 @@ class MenuController extends BaseController
                     $map['id'] = $post['id'];
                     $result = $menu_service->update($map, $post);
                 }
-
-                $result === false ? $this->error('操作失败！') : $this->success('操作成功！');
+//                $result === false ? $this->error('操作失败！') : $this->success('操作成功！');
+                if ($result === false){
+                    $this->error('操作失败！');
+                }else{
+                    //添加或者修改菜单成功后，注销缓存
+                    S('system_menu',null);
+                    $this->success('操作成功！');
+                }
             }
         } else {
             $id = I('get.id');
@@ -89,7 +101,9 @@ class MenuController extends BaseController
     {
         $menu_service = new MenuService();
         $active_menu = $menu_service->get_active_parent_menu("id,name,parent_id");
-        $this->ajaxReturn(array_values($active_menu), 'JSON');
+//        print_r($active_menu);
+        $select_tree = $menu_service->getSelectTree($active_menu);
+        $this->ajaxReturn($select_tree, 'JSON');
     }
 
     /**

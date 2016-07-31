@@ -82,29 +82,31 @@
     
     <script>
         $(function () {
-            load_menu();
-        });
-        //加载菜单
-        function load_menu() {
-            $.ajax({
-                type: 'GET',
-                url: "<?php echo U('load_menu');?>",
-                success: function (res) {
-                    if (res.length !== 0) {
-                        var options = "", selected = "", parent_menu = '<?php echo ($vo["parent_id"]); ?>';
-                        res.forEach(function (item) {
-                            if (parent_menu == item.id) {
-                                selected = "selected";
-                            } else {
-                                selected = "";
-                            }
-                            options += "<option value='" + item.id + "' " + selected + ">" + item.name + "</option>";
-                        });
-                        $("select[name='parent_id']").append(options);
+            var load_menu = function () {
+                $.ajax({
+                    type: 'GET',
+                    url: "<?php echo U('load_menu');?>",
+                    success: function (res) {
+                        if (res.length !== 0) {
+                            var options = "", selected = "", parent_menu = '<?php echo ($vo["parent_id"]); ?>';
+                            res.forEach(function (item) {
+                                if (parent_menu == item.id) {
+                                    selected = "selected";
+                                } else {
+                                    selected = "";
+                                }
+                                console.log(item.spl);
+                                options += "<option value='" + item.id + "' " + selected + ">" + item.spl + item.name + "</option>";
+                            });
+                            $("select[name='parent_id']").append(options);
+                        }
                     }
-                }
-            });
-        }
+                });
+            }
+
+            load_menu();
+
+        });
     </script>
 
 </div>

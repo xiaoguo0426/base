@@ -1,0 +1,1813 @@
+[ 2016-07-26T09:17:10+08:00 ] ::1 /base/Shop/Specifications/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_shop_specifications` ORDER BY status DESC,id DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001427s ]
+
+[ 2016-07-26T09:17:30+08:00 ] ::1 /base/Shop/Specifications/resume.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0030s ]
+SQL: UPDATE `tp_shop_specifications` SET `status`='1',`update_date`='2016-07-26 09:17:30',`update_by`='1' WHERE `id` = 2 [ RunTime:0.0032s ]
+
+[ 2016-07-26T09:17:33+08:00 ] ::1 /base/Shop/Specifications/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `tp_shop_specifications` ORDER BY status DESC,id DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002295s ]
+
+[ 2016-07-26T15:57:29+08:00 ] ::1 /base/Shop/Specifications/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `tp_shop_specifications` ORDER BY status DESC,id DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001376s ]
+
+[ 2016-07-26T15:57:43+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001322s ]
+
+[ 2016-07-26T15:57:45+08:00 ] ::1 /base/Shop/Products/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 28 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 35 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 45 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 59 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 59 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 59 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 59 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 59 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 59 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 71 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 78 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 87 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 96 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 102 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 133 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2016-07-26T16:01:24+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001453s ]
+
+[ 2016-07-26T16:01:28+08:00 ] ::1 /base/Shop/Specifications/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `tp_shop_specifications` ORDER BY status DESC,id DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001394s ]
+
+[ 2016-07-26T16:01:30+08:00 ] ::1 /base/Shop/Specifications/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\3ee08395f152b3e91cc5cac81be716e4.php 第 19 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\3ee08395f152b3e91cc5cac81be716e4.php 第 19 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\3ee08395f152b3e91cc5cac81be716e4.php 第 19 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\3ee08395f152b3e91cc5cac81be716e4.php 第 19 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\3ee08395f152b3e91cc5cac81be716e4.php 第 19 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\3ee08395f152b3e91cc5cac81be716e4.php 第 19 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\3ee08395f152b3e91cc5cac81be716e4.php 第 27 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\3ee08395f152b3e91cc5cac81be716e4.php 第 43 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\3ee08395f152b3e91cc5cac81be716e4.php 第 49 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\3ee08395f152b3e91cc5cac81be716e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2016-07-26T16:01:35+08:00 ] ::1 /base/Shop/Specifications/form.shtml?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `tp_shop_specifications` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001009s ]
+
+[ 2016-07-26T16:01:39+08:00 ] ::1 /base/Shop/Specifications/form.shtml?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `tp_shop_specifications` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0075s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0004s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002027s ]
+
+[ 2016-07-26T16:02:12+08:00 ] ::1 /base/Shop/Specifications/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `tp_shop_specifications` ORDER BY status DESC,id DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001432s ]
+
+[ 2016-07-26T16:02:13+08:00 ] ::1 /base/Shop/Specifications/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0073s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T16:02:14+08:00 ] ::1 /base/Shop/Specifications/form.shtml?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `tp_shop_specifications` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2016-07-26T16:02:32+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001242s ]
+
+[ 2016-07-26T16:02:33+08:00 ] ::1 /base/Shop/Products/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0077s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T16:02:34+08:00 ] ::1 /base/Shop/Products/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 28 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 35 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 45 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 68 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 75 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 84 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 93 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2016-07-26T16:06:34+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001514s ]
+
+[ 2016-07-26T16:06:34+08:00 ] ::1 /base/Shop/Products/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0087s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T16:06:35+08:00 ] ::1 /base/Shop/Products/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 28 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 35 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 45 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 68 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 75 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 84 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 93 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2016-07-26T16:07:18+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001446s ]
+
+[ 2016-07-26T16:07:19+08:00 ] ::1 /base/Shop/Products/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0043s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T16:07:20+08:00 ] ::1 /base/Shop/Products/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 28 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 35 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 45 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 68 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 75 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 84 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 93 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2016-07-26T16:25:34+08:00 ] ::1 /base/Shop/Specifications/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `tp_shop_specifications` ORDER BY status DESC,id DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001202s ]
+
+[ 2016-07-26T16:29:40+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001343s ]
+
+[ 2016-07-26T16:29:40+08:00 ] ::1 /base/Shop/Products/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002339s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0032s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T16:29:44+08:00 ] ::1 /base/Shop/Products/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001382s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 28 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 35 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 45 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 68 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 75 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 84 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 93 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000837s ]
+
+[ 2016-07-26T16:30:18+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002602s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001413s ]
+
+[ 2016-07-26T16:30:19+08:00 ] ::1 /base/Shop/Products/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002997s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0075s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T16:30:24+08:00 ] ::1 /base/Shop/Products/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 28 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 35 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 45 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 68 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 75 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 84 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 93 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000900s ]
+
+[ 2016-07-26T16:30:28+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-07-26T16:30:31+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-07-26T16:30:33+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T16:30:35+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-07-26T16:30:59+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-07-26T21:59:11+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012078s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2016-07-26T21:59:15+08:00 ] ::1 /base/Shop/Products/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 28 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 35 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 45 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 68 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 75 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 84 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 93 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2016-07-26T21:59:37+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001567s ]
+
+[ 2016-07-26T21:59:38+08:00 ] ::1 /base/Shop/Products/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0086s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T21:59:58+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001571s ]
+
+[ 2016-07-26T21:59:58+08:00 ] ::1 /base/Shop/Products/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0077s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T21:59:59+08:00 ] ::1 /base/Shop/Products/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 28 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 35 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 45 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 68 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 75 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 84 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 93 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-07-26T22:00:03+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:00:07+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:00:57+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001479s ]
+
+[ 2016-07-26T22:00:58+08:00 ] ::1 /base/Shop/Products/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0040s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T22:00:58+08:00 ] ::1 /base/Shop/Products/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 28 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 35 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 45 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 68 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 75 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 84 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 93 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2016-07-26T22:01:01+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `category_id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:01:11+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `category_id` = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:01:13+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `category_id` = '6' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:11:25+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001246s ]
+
+[ 2016-07-26T22:11:25+08:00 ] ::1 /base/Shop/Products/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0076s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T22:28:10+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001318s ]
+
+[ 2016-07-26T22:28:11+08:00 ] ::1 /base/Shop/Products/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0079s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T22:28:15+08:00 ] ::1 /base/Shop/Products/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002189s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 28 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 35 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 45 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 68 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 75 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 84 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 93 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2016-07-26T22:28:44+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000412s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001943s ]
+
+[ 2016-07-26T22:28:45+08:00 ] ::1 /base/Shop/Products/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0035s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T22:28:48+08:00 ] ::1 /base/Shop/Products/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 28 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 35 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 45 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 68 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 75 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 84 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 93 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2016-07-26T22:28:51+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `category_id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:28:53+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `category_id` = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:28:55+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `category_id` = '5' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:28:57+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `category_id` = '6' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:35:05+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001234s ]
+
+[ 2016-07-26T22:35:06+08:00 ] ::1 /base/Shop/Products/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0075s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T22:35:07+08:00 ] ::1 /base/Shop/Products/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 28 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 35 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 45 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 68 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 75 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 84 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 93 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2016-07-26T22:35:09+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001343s ]
+
+[ 2016-07-26T22:35:12+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001064s ]
+
+[ 2016-07-26T22:35:14+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001242s ]
+
+[ 2016-07-26T22:35:16+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000983s ]
+
+[ 2016-07-26T22:35:18+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2016-07-26T22:35:38+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000403s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004950s ]
+
+[ 2016-07-26T22:35:39+08:00 ] ::1 /base/Shop/Products/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0110s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T22:35:42+08:00 ] ::1 /base/Shop/Products/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 28 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 35 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 45 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 68 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 75 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 84 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 93 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000736s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2016-07-26T22:35:44+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `category_id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:35:50+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `category_id` = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:35:52+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `category_id` = '6' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:37:30+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001325s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001476s ]
+
+[ 2016-07-26T22:37:31+08:00 ] ::1 /base/Shop/Products/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0034s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T22:37:33+08:00 ] ::1 /base/Shop/Products/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 28 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 35 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 45 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 68 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 75 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 84 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 93 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001316s ]
+
+[ 2016-07-26T22:37:37+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `category_id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:37:39+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `category_id` = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:37:41+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `category_id` = '6' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:37:42+08:00 ] ::1 /base/Shop/Products/get_specifications_by_category_id.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `tp_shop_specifications` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_specifications` WHERE `category_id` = '7' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-26T22:39:39+08:00 ] ::1 /base/Shop/Products/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `tp_shop_products` ORDER BY status DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001525s ]
+
+[ 2016-07-26T22:39:40+08:00 ] ::1 /base/Shop/Products/index.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0083s ]
+ERR: 非法操作:index.js.map
+
+[ 2016-07-26T22:39:45+08:00 ] ::1 /base/Shop/Products/form.shtml?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\www\base\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `tp_shop_products` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `tp_shop_category` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`name` FROM `tp_shop_category` WHERE `status` = 1  [ RunTime:0.0004s ]
+NOTIC: [2048] Non-static method Vendor\FormToken\FormToken::_crete_token() should not be called statically E:\www\base\ThinkPHP\Library\Vendor\FormToken\FormToken.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 20 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 28 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 35 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 45 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 68 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 75 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 84 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 93 行.
+NOTIC: [8] Undefined variable: vo E:\www\base\Static\Runtime\Cache\Shop\e306fc769c3e35013ffb784869074ed1.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

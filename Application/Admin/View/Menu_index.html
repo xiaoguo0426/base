@@ -1,10 +1,11 @@
 <extend name="Public:index"/>
 <block name='tools'>
-    <button type="button" class="btn btn-sm btn-primary" data-modal="{:U('Admin/Menu/form')}">添加角色</button>
+    <button type="button" class="btn btn-sm btn-primary" data-modal="{:U('Admin/Menu/form')}">添加菜单</button>
 </block>
 <block name="table">
     <thead>
     <tr>
+        <th>id</th>
         <th>排序</th>
         <th>菜单名</th>
         <th>图标</th>
@@ -17,7 +18,8 @@
     <volist name="list" id="vo" key="k">
         <tr>
             <td>{$k}</td>
-            <td>{:is_parent_menu($vo['parent_id'])}{$vo.name}</td>
+            <td>{$vo.sort}</td>
+            <td>{$vo.spl}{$vo.name}</td>
             <td>
                 <button class="btn btn-success  dim" type="button"><i class="{$vo.icon}"></i></button>
             </td>

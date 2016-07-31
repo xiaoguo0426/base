@@ -1,6 +1,6 @@
 ;
 (function () {
-
+    "use strict";
     function _app() {
         this.version = '0.1';
         this.author = 'eggyDog';
@@ -36,47 +36,54 @@
      * async   是否异步请求
      */
     _form.prototype.load = function (param) {
-        var index = layer.load({icon: 16});
+        // var index = layer.load({icon: 16}
+        var _self = this, index = _self.loading(), result = '';
         $.ajax({
             type: param.method || 'GET',
             url: param.url || _SELF_,
             data: param.data || {},
-            // dataType: 'json',
+            // dataType: 'json',        //这里不要指定返回数据类型
             async: typeof param.async === 'undefined' ? true : false,
             beforeSend: function () {
             },
             complete: function (XMLHttpRequest, textStatus) {
-                layer.close(index);
+                // layer.close(index);
+                _self.close(index);
             },
             success: function (res, textStatus) {
+                if (!this.async) {
+                    result = res;
+                } else {
+                    if (typeof res === 'object') {
+                        if (res.status === 1) {
+                            // layer.msg(res.info || '操作成功！', {icon: 1});
+                            _self.success(res.info);
+                            window.setTimeout(function () {
+                                if (res.url) {
+                                    window.location.href = res.url;
+                                } else {
+                                    window.location.reload();
+                                }
+                            }, 3000);
 
-                if (typeof res === 'object') {
-                    if (res.status === 1) {
-                        layer.msg(res.info || '操作成功！', {icon: 1});
-                        window.setTimeout(function () {
-                            if (res.url) {
-                                window.location.href = res.url;
-                            } else {
-                                window.location.reload();
-                            }
-                        }, 3000);
-
-                    } else {
-                        layer.msg(res.info || '操作失败！', {icon: 2});
-                        layer.close(index);
+                        } else {
+                            // layer.msg(res.info || '操作失败！', {icon: 2});
+                            // layer.close(index);
+                            _self.error(res.info);
+                        }
                     }
-                }
-                // var _modal = $(res);
-                // _modal.appendTo('body');
-                // // $('body').append(res);
-                // $('.modal').modal('show').on('hidden.bs.modal',function(){
-                //     _modal.remove();
-                // });
+                    // var _modal = $(res);
+                    // _modal.appendTo('body');
+                    // // $('body').append(res);
+                    // $('.modal').modal('show').on('hidden.bs.modal',function(){
+                    //     _modal.remove();
+                    // });
 
-                //动态添加的html一定要在common.js之前，不然动态添加的html是没有办法事件绑定的
-                window._modal = $(res).appendTo('#wrapper').modal('show').on('hidden.bs.modal', function () {
-                    $(this).remove();
-                });
+                    //动态添加的html一定要在common.js之前，不然动态添加的html是没有办法事件绑定的
+                    window._modal = $(res).appendTo('#wrapper').modal('show').on('hidden.bs.modal', function () {
+                        $(this).remove();
+                    });
+                }
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log('error');
@@ -85,8 +92,58 @@
                 console.log(errorThrown);
             }
         });
+        return result;
+    };
+    //loading弹窗
+    _form.prototype.loading = function () {
+        return layer.load({icon: 16});
+    };
+    //关闭指定弹窗
+    _form.prototype.close = function (index) {
+        layer.close(index);
     };
 
+    _form.prototype.alert = function (message) {
+
+    };
+    //错误弹窗
+    _form.prototype.error = function (message) {
+        layer.msg(message || '操作成功！', {icon: 2});
+    }
+    //成功弹窗
+    _form.prototype.success = function (message) {
+        layer.msg(message || '操作成功！', {icon: 1});
+    }
+
+    /**
+     * 同步获取数据
+     * @param url
+     * @param data
+     * @param method
+     * @returns {*}
+     */
+    _form.prototype.sync = function (url, data, method) {
+        var _self = this, index = _self.loading(), result = '';
+        $.ajax({
+            type: method || 'GET',
+            url: url || _SELF_,
+            data: data || {},
+            async: false,
+            complete: function (XMLHttpRequest, textStatus) {
+                _self.close(index);
+            },
+            success: function (res, textStatus) {
+                result = res;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log('error');
+                console.log(XMLHttpRequest);
+                console.log(textStatus);
+                console.log(errorThrown);
+            }
+        });
+        return result;
+    }
 
     /**
      * 表单挂载

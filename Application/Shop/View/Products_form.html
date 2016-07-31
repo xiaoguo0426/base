@@ -1,0 +1,163 @@
+<extend name="Admin@Public:form"/>
+<block name="form">
+
+    <div class="form-group"><label class="col-lg-2 control-label">分类名称</label>
+        <div class="col-lg-10">
+            <select class="form-control m-b" name="category_id">
+                <option value="">请选择分类</option>
+                <volist name="category" id="item">
+                    <option value="{$item.id}"
+                    <eq name="item.id" value="$vo['category_id']">selected</eq>
+                    >{$item.name}</option>
+                </volist>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group"><label class="col-lg-2 control-label">商品名称</label>
+        <div class="col-lg-10">
+            <input type="text" name="name" value="{$vo.name}" placeholder="商品名称" class="form-control" autofocus="true"
+                   required=""/>
+        </div>
+    </div>
+
+    <div class="form-group"><label class="col-lg-2 control-label">logo</label>
+        <div class="col-lg-10">
+            <input type="hidden" name="logo" class="form-control" data-callback value="{$vo.logo}" placeholder="头像"
+                   autofocus="true" autocomplete="off" readonly/>
+            <img src="{$vo.logo|default='__RES__/img/add.png'}" class="thumbnail" style="width: 96px;height: 96px;"
+                 data-files="one"
+                 data-modal="{:U('Plugins/Uploader/form')}"/>
+        </div>
+    </div>
+
+    <div class="form-group"><label class="col-lg-2 control-label">缩略图</label>
+        <div class="col-lg-10">
+            <input type="hidden" name="images" class="form-control" data-callback value="{$vo.images}" placeholder="缩略图"
+                   autofocus="true" autocomplete="off" readonly/>
+            <img src="{$vo.logo|default='__RES__/img/add.png'}" class="thumbnail" style="width: 64px;height: 64px;"
+                 data-files="one"
+                 data-modal="{:U('Plugins/Uploader/form')}"/>
+        </div>
+    </div>
+
+
+    <div class="form-group"><label class="col-lg-2 control-label">规格</label>
+        <div class="col-lg-10">
+            <select class="form-control m-b" name="params_id">
+                <option value="">请选择规格</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group"><label class="col-lg-2 control-label">规格参数</label>
+
+    </div>
+
+    <div class="form-group"><label class="col-lg-2 control-label">标签</label>
+        <div class="col-lg-10">
+            <input type="text" name="tags" value="{$vo.tags}" placeholder="标签" class="form-control" autofocus="true"
+                   required=""/>
+        </div>
+    </div>
+
+    <div class="form-group"><label class="col-lg-2 control-label">详情</label>
+        <div class="col-lg-10">
+            <input type="text" name="content" value="{$vo.content}" placeholder="详情" class="form-control"
+                   autofocus="true"
+                   required=""/>
+        </div>
+    </div>
+
+
+    <div class="form-group"><label class="col-lg-2 control-label">备注</label>
+        <div class="col-lg-10">
+            <input type="text" name="back_up" value="{$vo.back_up}" placeholder="备注" class="form-control"
+                   autofocus="true" required=""/>
+        </div>
+    </div>
+
+    <div class="form-group"><label class="col-lg-2 control-label">状态</label>
+        <div class="col-lg-10">
+            <div class="radio radio-info radio-inline">
+                <input type="radio" value="1" name="status"
+                <neq name="vo.status" value="0">checked=""</neq>
+                />
+                启用
+            </div>
+            <div class="radio radio-info radio-inline">
+                <input type="radio" value="0" name="status"
+                <eq name="vo.status" value="0">checked=""</eq>
+                />
+                禁用
+            </div>
+        </div>
+    </div>
+
+    <input type="hidden" name="id" value="{$vo.id|default=0}"/>
+    <input name="form_token" type="hidden" value="{$form_token}"/>
+</block>
+<block name="script">
+    <script>
+        $(function () {
+            var $_category_id = $("select[name=category_id]"), $_params_id = $("select[name=params_id]"), category_id, specifications_id, options = '', params = '';
+            //监听分类下拉菜单
+            $_category_id.change(function () {
+                category_id = this.value;
+                if (category_id.length === 0) {
+                    return false;
+                }
+                options = get_specifications_by_category_id(category_id);
+
+                $_params_id.empty().append(options);
+                //分类改变时，同时改变规格【查找该分类下的规格】
+            }).trigger('change');
+
+            $_params_id.change(function () {
+                specifications_id = this.value;
+                if (category_id.length === 0) {
+                    return false;
+                }
+                params = get_params_by_specifications_id(specifications_id);
+            });
+        });
+
+        /**
+         * 获得分类
+         */
+        function get_specifications_by_category_id(category_id) {
+            var result, options = '', params = {
+                method: "POST",
+                url: "{:U('getSpecifications')}",
+                data: {"category_id": category_id},
+                async: false
+            };
+            //同步加载数据
+            result = $.form.load(params);
+            if (result.length !== 0) {
+                result.forEach(function (item) {
+                    options += "<option value = '" + item.id + "'>" + item.name + "</option>";
+                });
+            }
+            return options;
+        }
+
+        function get_params_by_specifications_id(specifications_id) {
+            var result, options = '', params = {
+                method: "POST",
+                url: "{:U('getParams')}",
+                data: {"specifications_id": specifications_id},
+                async: false
+            };
+            //同步加载数据
+            result = $.form.load(params);
+            if (result.length !== 0) {
+                result.forEach(function (item) {
+                    options += "<option value = '" + item.id + "'>" + item.name + "</option>";
+                });
+            }
+            return options;
+        }
+
+    </script>
+</block>
